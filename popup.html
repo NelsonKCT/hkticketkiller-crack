@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>Popup</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+
+<body>
+    <div class="row" style="justify-content: space-between;">
+        <img src="images/logo.png" style="margin-top: 12px;" id="logo">
+        <img id="options_btn" src="images/settings_FILL0_wght400_GRAD0_opsz24.svg" style="align-self: center; cursor: pointer;display: none;">
+    </div>
+    
+    <div id="main_container" class="column" style="padding: 12px; display: none;">
+        <div class="row" style="justify-content: space-between; width: 100%;">
+            <h2 id="title">未啟用</h2>
+            <a id="check_key_url" style="align-self: center;" target="_blank" href="https://hkticketkiller.com/check_key">檢查金鑰</a>
+        </div>
+        <p id="desc">輸入金鑰以啟用HKTicketKiller</p>
+        <input id="activate_input" placeholder="輸入產品金鑰..."></input>
+        <button id="activate_button">送出</button>   
+    </div>
+    <div style="padding:8px 12px 0px 12px; width:100%; border-top: 1px solid rgba(0,0,0,.06);"></div>
+    <div id="options_container" class="column" style="padding: 12px; display: none; gap: 16px;">
+        
+        <div class="row" style="justify-content: space-between; width: 100%;">
+            <h2>設定</h2>
+            <div id="all_settings" class="row" style="min-width: 0px; cursor: pointer; justify-content: flex-start; gap: 8px">
+                <p style="color: #4a6ee0; align-self: center;">所有設定</p>
+                
+            </div>
+        </div>
+        
+        <div class="column" style="row-gap: 4px;width: 100%;">
+            <p id="options_hkticketing_range_desc">快達票自動刷新速度: 3秒</p>
+            <input type="range" min="1" max="10" value="3" class="slider" id="options_hkticketing_range">
+        </div>
+
+        <div class="row" style="justify-content: space-between; width: 100%;">
+            <p>啟用城市售票網自動填表</p>
+            <div id="toggle_urbtix_autofill"></div>
+        </div>
+        <div class="row" style="justify-content: space-between; width: 100%;">
+            <p>啟用Cityline自動填表</p>
+            <div id="toggle_cityline_autofill"></div>
+        </div>
+    </div>
+    <div id="loading_container" class="column" style="padding: 12px;">
+        <h2 id="title">請稍候...</h2>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

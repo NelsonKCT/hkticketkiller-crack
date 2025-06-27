@@ -1,0 +1,67 @@
+{
+    "name": "Hkticket Killer",
+    "description": "Hkticket Killer是一個持續更新的輔助購票工具",
+    "version": "1.16.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["tabs","storage","system.display","notifications"],
+    "host_permissions":["https://hkticketkiller-backend-latest.vercel.app/*","https://worldtimeapi.org/*","https://event.cityline.com/*"],
+    "action": {
+        "default_icon": {
+            "16": "images/1.png",
+            "48": "images/2.png",
+            "128": "images/3.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "16": "images/1.png",
+        "48": "images/2.png",
+        "128": "images/3.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/*",
+                "key.json","test.js",
+                "scripts/hkticketkiller.js" 
+            ],
+            "matches": [ "<all_urls>" ]
+        }
+    ],
+    "content_scripts":[
+        {
+            "matches":["https://*.hkticketing.com/*"],
+            "js": [ "scripts/bot.js" ],
+            "css":["scripts/bot.css"],
+            "run_at": "document_start"
+        },
+        {
+            "matches":["https://*.cityline.com/*"],
+            "js": [ "scripts/bot_cityline.js" ],
+            "run_at": "document_start"
+        },
+        {
+            "matches":["https://*.fantopia.io/*"],
+            "js": [ "scripts/bot_fantopia.js" ],
+            "run_at": "document_start"
+        },
+        {
+            "matches":["https://*.urbtix.hk/*"],
+            "js": [ "scripts/bot_urbtix.js" ],
+            "run_at": "document_start"
+        },
+        {
+            "matches":["https://hkticketkiller.com/settings*","https://hkticketkillernew.bubbleapps.io/settings*","https://hkticketkiller.com/version-test/settings*"],
+            "js": [ "scripts/settings.js" ],
+            "run_at": "document_start"
+        },
+        {
+            "matches":["https://*.kktix.com/*","https://*.kktix.cc/*"],
+            "js": [ "scripts/bot_kktix.js" ],
+            "run_at": "document_start"
+        }
+    ]
+}
