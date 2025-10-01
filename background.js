@@ -1,1 +1,338 @@
-function _0x44ff(){const _0x4e2171=['windowId','onButtonClicked','update','setDeadline','runtime','hkticketkiller_success_tabId','push','3311312atGpDy','unixtime','checkDeadline:\x20enabled','getOptions','hkticketkiller_enabled','json','setWindowSize','maximized','message','width','1911sipbJY','getDeadlineCallback','checkDeadline:\x20disabled','height','notifications','4366044tppvCJ','msg\x20received\x20from\x20bubble\x20app','onMessageExternal','url','action','addListener','10WJhCjS','round','session','forceReload','4042449tDhodS','1205658MJYcDU','create','hkticketkiller_options','workArea','display','msg\x20received\x20from\x20a\x20content\x20script:','error','splice','Value\x20currently\x20is\x20','catch','https://worldtimeapi.org/api/timezone/Asia/Hong_Kong','maximizedWindow','reload','Error:','goToSettings','cityline','tab','windows','stopForceReload','getDeadline','hkticketkiller_success_windowId','5xrGbcj','checkDeadlineCallback','getOptionsCallback','indexOf','https://hkticketkiller-backend-latest.vercel.app','成功進入購票頁面','8947757ZsTgtS','saveWindowId','includes','https://hkticketkiller.com/settings','cors','setZoom','msg\x20received\x20from\x20the\x20extension','options','local','checkDeadline','8dzwSTp','tabs','now','key','set','stopForceReloadIds','getInfo','storage','sendMessage','checkDeadline:\x20no\x20key','then','16771304LNxKtz','query','system','openNewTab','hkticketkiller_key','disable','floor','?page=','checkDeadline:\x20check\x20again','586RpmnMw','getURL','log','length','get','hkticketkiller_deadline'];_0x44ff=function(){return _0x4e2171;};return _0x44ff();}function _0x3dd7(_0x392385,_0x5a001d){const _0x44ff20=_0x44ff();return _0x3dd7=function(_0x3dd7d3,_0x13aa83){_0x3dd7d3=_0x3dd7d3-0x193;let _0x46c2a5=_0x44ff20[_0x3dd7d3];return _0x46c2a5;},_0x3dd7(_0x392385,_0x5a001d);}const _0xa6c96d=_0x3dd7;(function(_0x320f12,_0x3e370e){const _0x51e035=_0x3dd7,_0x280723=_0x320f12();while(!![]){try{const _0x154611=-parseInt(_0x51e035(0x1e0))/0x1+parseInt(_0x51e035(0x1b9))/0x2*(parseInt(_0x51e035(0x1d0))/0x3)+-parseInt(_0x51e035(0x1c6))/0x4*(parseInt(_0x51e035(0x195))/0x5)+-parseInt(_0x51e035(0x1d5))/0x6+parseInt(_0x51e035(0x19b))/0x7*(parseInt(_0x51e035(0x1a5))/0x8)+parseInt(_0x51e035(0x1df))/0x9*(parseInt(_0x51e035(0x1db))/0xa)+parseInt(_0x51e035(0x1b0))/0xb;if(_0x154611===_0x3e370e)break;else _0x280723['push'](_0x280723['shift']());}catch(_0x14c434){_0x280723['push'](_0x280723['shift']());}}}(_0x44ff,0xa56b5));let versionTest=![],doNotChangeWindowIds=[],startedWindowIds=[],stopForceReloadIds=[],backendDomain=_0xa6c96d(0x199),settingsPage=_0xa6c96d(0x19e),getCurrentTab=async function(){const _0x4e9583=_0xa6c96d;let _0x57e707={'active':!![],'currentWindow':!![]},[_0x3dbe7c]=await chrome[_0x4e9583(0x1a6)][_0x4e9583(0x1b1)](_0x57e707);return _0x3dbe7c;},openNewTab=function(_0x3d9be8){const _0x1f0de3=_0xa6c96d;console[_0x1f0de3(0x1bb)](_0x1f0de3(0x1b3),_0x3d9be8),chrome[_0x1f0de3(0x1a6)][_0x1f0de3(0x1e1)]({'active':!![],'url':_0x3d9be8});},sendMsg=async function(_0x535265){const _0x5cf251=_0xa6c96d;let _0x49d385=await getCurrentTab();return chrome[_0x5cf251(0x1a6)]['sendMessage'](_0x49d385['id'],{'action':_0x535265},function(_0x521233){}),!![];},getCurrentTime=async function(){const _0x1aba61=_0xa6c96d;let _0x479a24=_0x1aba61(0x1ea);try{const _0x3c2059=await fetch(_0x479a24),_0x1df7c7=await _0x3c2059['json']();return _0x1df7c7['unixtime'];}catch(_0x2975d6){return Math[_0x1aba61(0x1b6)](Date[_0x1aba61(0x1a7)]()/0x3e8);}},checkDeadline=async function(_0x6cf51c){const _0x3a4a45=_0xa6c96d;let _0x366277=await chrome[_0x3a4a45(0x1ac)]['local'][_0x3a4a45(0x1bd)]([_0x3a4a45(0x1b4),_0x3a4a45(0x1be),'hkticketkiller_enabled','hkticketkiller_disabled']);if(!_0x366277)return;let _0x3f1db8=_0x366277[_0x3a4a45(0x1be)];if(versionTest)_0x3f1db8=0x6954add0;let _0x56e586={'action':'checkDeadlineCallback','deadline':_0x3f1db8,'key':_0x366277[_0x3a4a45(0x1b4)]};if(_0x366277[_0x3a4a45(0x1ca)])_0x56e586[_0x3a4a45(0x1b5)]=![];else{if(_0x366277['hkticketkiller_disabled'])_0x56e586[_0x3a4a45(0x1b5)]=!![];else{if(_0x3f1db8){console['log'](_0x3a4a45(0x1b8));let _0x1d2423=await getCurrentTime();if(!_0x3f1db8||!_0x1d2423)_0x56e586['disable']=!![];else{if(_0x1d2423>_0x3f1db8)_0x56e586['disable']=!![];else _0x56e586[_0x3a4a45(0x1b5)]=![];}_0x56e586[_0x3a4a45(0x1b5)]?(console[_0x3a4a45(0x1bb)](_0x3a4a45(0x1d2)),await chrome['storage'][_0x3a4a45(0x1a3)][_0x3a4a45(0x1a9)]({'hkticketkiller_disabled':!![]})):(console[_0x3a4a45(0x1bb)](_0x3a4a45(0x1c8)),await chrome['storage']['local']['set']({'hkticketkiller_enabled':!![]}));}else console['log'](_0x3a4a45(0x1ae)),_0x56e586['disable']=!![];}}if(!_0x6cf51c)return;if(_0x6cf51c[_0x3a4a45(0x1f0)]&&_0x6cf51c[_0x3a4a45(0x1f0)]['id'])chrome[_0x3a4a45(0x1a6)][_0x3a4a45(0x1ad)](_0x6cf51c[_0x3a4a45(0x1f0)]['id'],_0x56e586);else chrome[_0x3a4a45(0x1c3)]['sendMessage'](_0x56e586);};chrome[_0xa6c96d(0x1d4)][_0xa6c96d(0x1c0)][_0xa6c96d(0x1da)](function(){let _0x452d5f=async function(){const _0x51eafb=_0x3dd7;let _0x396fe4=await chrome['storage'][_0x51eafb(0x1dd)][_0x51eafb(0x1bd)]([_0x51eafb(0x1c4),_0x51eafb(0x194)]);if(!_0x396fe4)return;let _0x5873bc=_0x396fe4[_0x51eafb(0x1c4)],_0x251348=_0x396fe4[_0x51eafb(0x194)];if(_0x5873bc)await chrome['tabs'][_0x51eafb(0x1c1)](_0x5873bc,{'highlighted':!![]});if(_0x251348)await chrome['windows'][_0x51eafb(0x1c1)](_0x251348,{'focused':!![]});};_0x452d5f();}),chrome[_0xa6c96d(0x1f1)]['onCreated']['addListener'](()=>{const _0x2c75a8=_0xa6c96d;console[_0x2c75a8(0x1bb)]('onCreated'),chrome[_0x2c75a8(0x1ac)][_0x2c75a8(0x1a3)][_0x2c75a8(0x1a9)]({'hkticketkiller_disabled':![],'hkticketkiller_enabled':![]},()=>{checkDeadline();});}),chrome[_0xa6c96d(0x1c3)][_0xa6c96d(0x1d7)]['addListener'](function(_0x28dda4,_0x534515,_0x466570){const _0x3ff356=_0xa6c96d;console[_0x3ff356(0x1bb)](_0x3ff356(0x1d6),_0x28dda4);if(_0x28dda4[_0x3ff356(0x1d9)]===_0x3ff356(0x1b3))openNewTab(_0x28dda4[_0x3ff356(0x1d8)]);else _0x28dda4['action']&&sendMsg(_0x28dda4['action']);return!![];});let forceReload=async function(_0x2ddb3b){const _0x503756=_0xa6c96d;console[_0x503756(0x1bb)](_0x503756(0x1de),_0x2ddb3b),console[_0x503756(0x1bb)](stopForceReloadIds);if(stopForceReloadIds[_0x503756(0x19d)](_0x2ddb3b)){console['log'](_0x503756(0x1aa),_0x2ddb3b),sendResponse(![]);return;}return await chrome[_0x503756(0x1a6)][_0x503756(0x1ec)](_0x2ddb3b,{'bypassCache':!![]}),!![];};chrome[_0xa6c96d(0x1c3)]['onMessage']['addListener'](function(_0x295302,_0x15a206,_0x50071a){const _0x551ae8=_0xa6c96d;console['log'](_0x15a206[_0x551ae8(0x1f0)]?_0x551ae8(0x1e5)+_0x15a206[_0x551ae8(0x1f0)]['url']:_0x551ae8(0x1a1)),console['log'](_0x15a206),console[_0x551ae8(0x1bb)](_0x295302);if(_0x295302['action']===_0x551ae8(0x1eb))chrome['windows']['update'](_0x15a206['tab']['windowId'],{'state':_0x551ae8(0x1cd)});else{if(_0x295302[_0x551ae8(0x1d9)]===_0x551ae8(0x1cc)){let _0x1bbf13=_0x15a206['tab'][_0x551ae8(0x1bf)];if(doNotChangeWindowIds['includes'](_0x1bbf13)){_0x50071a(![]);return;}if(startedWindowIds[_0x551ae8(0x19d)](_0x1bbf13)){let _0xa63cc2=startedWindowIds[_0x551ae8(0x198)](_0x1bbf13);_0xa63cc2>0x0&&startedWindowIds[_0x551ae8(0x1e7)](_0xa63cc2,0x1);}else{_0x50071a(![]);return;}_0x50071a(!![]),doNotChangeWindowIds[_0x551ae8(0x1c5)](_0x1bbf13),chrome[_0x551ae8(0x1b2)][_0x551ae8(0x1e4)][_0x551ae8(0x1ab)](function(_0x2e5ae3){const _0x37cb57=_0x551ae8;if(_0x2e5ae3[_0x37cb57(0x1bc)]>0x0){let _0x2ffa73=_0x2e5ae3[0x0][_0x37cb57(0x1e3)][_0x37cb57(0x1cf)],_0x501061=Math[_0x37cb57(0x1dc)](_0x2ffa73*0.5);chrome['windows'][_0x37cb57(0x1c1)](_0x1bbf13,{'drawAttention':!![],'width':_0x501061,'height':_0x295302[_0x37cb57(0x1d3)],'left':0x0,'top':0x0,'state':'normal'}),_0x295302['from']===_0x37cb57(0x1ef)?chrome[_0x37cb57(0x1a6)][_0x37cb57(0x1a0)](_0x15a206['tab']['id'],0.5):chrome[_0x37cb57(0x1a6)][_0x37cb57(0x1a0)](_0x15a206[_0x37cb57(0x1f0)]['id'],0.65);}});let _0x2062aa=async function(_0xa9b184){const _0x193576=_0x551ae8;await chrome[_0x193576(0x1ac)][_0x193576(0x1dd)][_0x193576(0x1a9)]({'hkticketkiller_success_tabId':_0xa9b184['id'],'hkticketkiller_success_windowId':_0xa9b184[_0x193576(0x1bf)]}),await chrome[_0x193576(0x1d4)][_0x193576(0x1e1)]('hkticketkiller_success',{'title':'HKticketkiller','message':_0x193576(0x19a),'buttons':[{'title':'查看'}],'iconUrl':chrome[_0x193576(0x1c3)][_0x193576(0x1ba)]('images/1.png'),'type':'basic'});};_0x2062aa(_0x15a206['tab']);}else{if(_0x295302[_0x551ae8(0x1d9)]===_0x551ae8(0x19c)){let _0x383a76=_0x15a206['tab'][_0x551ae8(0x1bf)];if(!startedWindowIds[_0x551ae8(0x19d)](_0x383a76))startedWindowIds['push'](_0x383a76);_0x50071a(!![]);}else{if(_0x295302[_0x551ae8(0x1d9)]===_0x551ae8(0x1a4))checkDeadline(_0x15a206),_0x50071a(!![]);else{if(_0x295302['action']===_0x551ae8(0x193))chrome[_0x551ae8(0x1ac)]['local'][_0x551ae8(0x1bd)]([_0x551ae8(0x1be)])['then'](_0x24c99e=>{const _0x2af6d9=_0x551ae8;console[_0x2af6d9(0x1bb)](_0x2af6d9(0x1e8)+_0x24c99e[_0x2af6d9(0x1be)]);let _0x1e13ab=_0x24c99e['hkticketkiller_deadline'];if(versionTest)_0x1e13ab=0x67741500;if(_0x15a206[_0x2af6d9(0x1f0)]&&_0x15a206[_0x2af6d9(0x1f0)]['id'])chrome[_0x2af6d9(0x1a6)]['sendMessage'](_0x15a206[_0x2af6d9(0x1f0)]['id'],{'action':_0x2af6d9(0x1d1),'deadline':_0x1e13ab});else chrome[_0x2af6d9(0x1c3)][_0x2af6d9(0x1ad)]({'action':_0x2af6d9(0x1d1),'deadline':_0x1e13ab});_0x50071a({'deadline':_0x1e13ab});})['catch'](_0x57e3c3=>{const _0x1c49a7=_0x551ae8;console[_0x1c49a7(0x1bb)](_0x1c49a7(0x1ed),_0x57e3c3);});else{if(_0x295302['action']==='getDeadlineFromKey'){let _0x10d620=backendDomain+'/v0/validation/'+_0x295302['key'];fetch(_0x10d620,{'mode':_0x551ae8(0x19f)})[_0x551ae8(0x1af)](_0x379a3=>_0x379a3[_0x551ae8(0x1cb)]())['then'](_0x351c08=>{const _0x23d898=_0x551ae8;console[_0x23d898(0x1bb)]('validation\x20data:',_0x351c08);if(_0x351c08&&_0x351c08[_0x23d898(0x1e6)])throw _0x351c08[_0x23d898(0x1e6)];if(!_0x351c08)_0x50071a(null);else chrome['storage'][_0x23d898(0x1a3)][_0x23d898(0x1a9)]({'hkticketkiller_deadline':_0x351c08[_0x23d898(0x1c7)],'hkticketkiller_enabled':![],'hkticketkiller_disabled':![],'hkticketkiller_key':_0x295302[_0x23d898(0x1a8)]})[_0x23d898(0x1af)](()=>{checkDeadline(_0x15a206);}),_0x50071a({'deadline':_0x351c08['unixtime']});})[_0x551ae8(0x1e9)](_0x68b72c=>{const _0x39bf49=_0x551ae8;console[_0x39bf49(0x1bb)](_0x39bf49(0x1ed),_0x68b72c);let _0x530c3f={'action':_0x39bf49(0x196),'disable':!![],'error':_0x68b72c[_0x39bf49(0x1ce)]};if(_0x15a206[_0x39bf49(0x1f0)]&&_0x15a206[_0x39bf49(0x1f0)]['id'])chrome['tabs'][_0x39bf49(0x1ad)](_0x15a206['tab']['id'],_0x530c3f);else chrome['runtime'][_0x39bf49(0x1ad)](_0x530c3f);});}else{if(_0x295302['action']===_0x551ae8(0x1c2))chrome[_0x551ae8(0x1ac)]['local'][_0x551ae8(0x1a9)]({'hkticketkiller_deadline':_0x295302['deadline']}),_0x50071a(!![]);else{if(_0x295302[_0x551ae8(0x1d9)]==='updateOptions')chrome['storage'][_0x551ae8(0x1a3)]['set']({'hkticketkiller_options':_0x295302[_0x551ae8(0x1a2)]}),_0x50071a(!![]);else{if(_0x295302[_0x551ae8(0x1d9)]===_0x551ae8(0x1c9))chrome[_0x551ae8(0x1ac)][_0x551ae8(0x1a3)][_0x551ae8(0x1bd)](['hkticketkiller_options'])['then'](_0x5ac729=>{const _0x12f609=_0x551ae8;console[_0x12f609(0x1bb)](_0x5ac729['hkticketkiller_options']),_0x15a206['tab']&&_0x15a206['tab']['id']?chrome[_0x12f609(0x1a6)][_0x12f609(0x1ad)](_0x15a206['tab']['id'],{'action':_0x12f609(0x197),'options':_0x5ac729[_0x12f609(0x1e2)]}):chrome['runtime']['sendMessage']({'action':_0x12f609(0x197),'options':_0x5ac729[_0x12f609(0x1e2)]}),_0x50071a(_0x5ac729['hkticketkiller_options']);});else{if(_0x295302[_0x551ae8(0x1d9)]===_0x551ae8(0x1ee)){let _0xb71eb2=settingsPage;if(_0x295302['page'])_0xb71eb2=settingsPage+_0x551ae8(0x1b7)+_0x295302['page'];openNewTab(_0xb71eb2),_0x50071a(!![]);}else{if(_0x295302[_0x551ae8(0x1d9)]===_0x551ae8(0x1de)){const _0x3fda3f=stopForceReloadIds[_0x551ae8(0x198)](_0x15a206[_0x551ae8(0x1f0)]['id']);_0x3fda3f>-0x1&&stopForceReloadIds[_0x551ae8(0x1e7)](_0x3fda3f,0x1),setTimeout(()=>{const _0x4bb4eb=_0x551ae8;forceReload(_0x15a206[_0x4bb4eb(0x1f0)]['id']);},_0x295302['delay']||0x64),_0x50071a(!![]);}else _0x295302[_0x551ae8(0x1d9)]==='stopForceReload'&&(stopForceReloadIds[_0x551ae8(0x1c5)](_0x15a206['tab']['id']),console['log'](_0x551ae8(0x1f2)),console['log'](stopForceReloadIds),_0x50071a(!![]));}}}}}}}}}}return!![];});
+let doNotChangeWindowIds = [];
+let startedWindowIds = [];
+let stopForceReloadIds = [];
+let getCurrentTab = async function() {
+    let queryOptions = {
+        'active': true,
+        'currentWindow': true
+    };
+    let [activeTab] = await chrome.tabs.query(queryOptions);
+    return activeTab;
+};
+let openNewTab = function(url) {
+    console.log("openNewTab", url);
+    chrome.tabs.create({
+        'active': true,
+        'url': url
+    });
+};
+let sendMsg = async function(action) {
+    let currentTab = await getCurrentTab();
+    chrome.tabs.sendMessage(currentTab.id, {
+        'action': action
+    }, function(response) {});
+    return true;
+};
+let getCurrentTime = async function() {
+    try {
+        const worldTimeResponse = await fetch("https://worldtimeapi.org/api/timezone/Asia/Hong_Kong");
+        const worldTimeData = await worldTimeResponse.json();
+        return worldTimeData.unixtime;
+    } catch (timeError) {
+        return Math.floor(Date.now() / 0x3e8);
+    }
+};
+let checkDeadline = async function(senderInfo) {
+    let storedData = await chrome.storage.local.get(["hkticketkiller_key", "hkticketkiller_deadline", 'hkticketkiller_enabled', 'hkticketkiller_disabled']);
+    if (!storedData) {
+        return;
+    }
+    let storedDeadline = storedData.hkticketkiller_deadline;
+    let deadlineMessage = {
+        'action': 'checkDeadlineCallback',
+        'deadline': storedDeadline,
+        'key': storedData.hkticketkiller_key
+    };
+    if (storedData.hkticketkiller_enabled) {
+        deadlineMessage.disable = false;
+    } else {
+        if (storedData.hkticketkiller_disabled) {
+            deadlineMessage.disable = true;
+        } else {
+            if (storedDeadline) {
+                console.log("checkDeadline: check again");
+                let currentTimestamp = await getCurrentTime();
+                if (!storedDeadline || !currentTimestamp) {
+                    deadlineMessage.disable = true;
+                } else {
+                    if (currentTimestamp > storedDeadline) {
+                        deadlineMessage.disable = true;
+                    } else {
+                        deadlineMessage.disable = false;
+                    }
+                }
+                if (deadlineMessage.disable) {
+                    console.log("checkDeadline: disabled");
+                    await chrome.storage.local.set({
+                        'hkticketkiller_disabled': true
+                    });
+                } else {
+                    console.log("checkDeadline: enabled");
+                    await chrome.storage.local.set({
+                        'hkticketkiller_enabled': true
+                    });
+                }
+            } else {
+                console.log("checkDeadline: no key");
+                deadlineMessage.disable = true;
+            }
+        }
+    }
+    if (!senderInfo) {
+        return;
+    }
+    if (senderInfo.tab && senderInfo.tab.id) {
+        chrome.tabs.sendMessage(senderInfo.tab.id, deadlineMessage);
+    } else {
+        chrome.runtime.sendMessage(deadlineMessage);
+    }
+};
+chrome.notifications.onButtonClicked.addListener(function() {
+    let focusSuccess = async function() {
+        let successState = await chrome.storage.session.get(["hkticketkiller_success_tabId", "hkticketkiller_success_windowId"]);
+        if (!successState) {
+            return;
+        }
+        let successTabId = successState.hkticketkiller_success_tabId;
+        let successWindowId = successState.hkticketkiller_success_windowId;
+        if (successTabId) {
+            await chrome.tabs.update(successTabId, {
+                'highlighted': true
+            });
+        }
+        if (successWindowId) {
+            await chrome.windows.update(successWindowId, {
+                'focused': true
+            });
+        }
+    };
+    focusSuccess();
+});
+chrome.windows.onCreated.addListener(() => {
+    console.log('onCreated');
+    chrome.storage.local.set({
+        'hkticketkiller_disabled': false,
+        'hkticketkiller_enabled': false
+    }, () => {
+        checkDeadline();
+    });
+});
+chrome.runtime.onMessageExternal.addListener(function(externalMessage, externalSender, externalResponse) {
+    console.log("msg received from bubble app", externalMessage);
+    if (externalMessage.action === "openNewTab") {
+        openNewTab(externalMessage.url);
+    } else if (externalMessage.action) {
+        sendMsg(externalMessage.action);
+    }
+    return true;
+});
+let forceReload = async function(tabId) {
+    console.log("forceReload", tabId);
+    console.log(stopForceReloadIds);
+    if (stopForceReloadIds.includes(tabId)) {
+        console.log("stopForceReloadIds", tabId);
+        sendResponse(false);
+        return;
+    }
+    await chrome.tabs.reload(tabId, {
+        'bypassCache': true
+    });
+    return true;
+};
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    console.log(sender.tab ? "msg received from a content script:" + sender.tab.url : "msg received from the extension");
+    console.log(sender);
+    console.log(request);
+    if (request.action === "maximizedWindow") {
+        chrome.windows.update(sender.tab.windowId, {
+            'state': "maximized"
+        });
+    } else {
+        if (request.action === "setWindowSize") {
+            let windowId = sender.tab.windowId;
+            if (doNotChangeWindowIds.includes(windowId)) {
+                sendResponse(false);
+                return;
+            }
+            if (startedWindowIds.includes(windowId)) {
+                let windowIndex = startedWindowIds.indexOf(windowId);
+                if (windowIndex > 0x0) {
+                    startedWindowIds.splice(windowIndex, 0x1);
+                }
+            } else {
+                sendResponse(false);
+                return;
+            }
+            sendResponse(true);
+            doNotChangeWindowIds.push(windowId);
+            chrome.system.display.getInfo(function(displayInfo) {
+                if (displayInfo.length > 0x0) {
+                    let workAreaWidth = displayInfo[0x0].workArea.width;
+                    let targetWidth = Math.round(workAreaWidth * 0.5);
+                    chrome.windows.update(windowId, {
+                        'drawAttention': true,
+                        'width': targetWidth,
+                        'height': request.height,
+                        'left': 0x0,
+                        'top': 0x0,
+                        'state': 'normal'
+                    });
+                    if (request.from === "cityline") {
+                        chrome.tabs.setZoom(sender.tab.id, 0.5);
+                    } else {
+                        chrome.tabs.setZoom(sender.tab.id, 0.65);
+                    }
+                }
+            });
+            let notifySuccess = async function(tab) {
+                await chrome.storage.session.set({
+                    'hkticketkiller_success_tabId': tab.id,
+                    'hkticketkiller_success_windowId': tab.windowId
+                });
+                await chrome.notifications.create('hkticketkiller_success', {
+                    'title': 'HKticketkiller',
+                    'message': "成功進入購票頁面",
+                    'buttons': [{
+                        'title': '查看'
+                    }],
+                    'iconUrl': chrome.runtime.getURL('images/1.png'),
+                    'type': 'basic'
+                });
+            };
+            notifySuccess(sender.tab);
+        } else {
+            if (request.action === "saveWindowId") {
+                let savedWindowId = sender.tab.windowId;
+                if (!startedWindowIds.includes(savedWindowId)) {
+                    startedWindowIds.push(savedWindowId);
+                }
+                sendResponse(true);
+            } else {
+                if (request.action === "checkDeadline") {
+                    checkDeadline(sender);
+                    sendResponse(true);
+                } else {
+                    if (request.action === "getDeadline") {
+                        chrome.storage.local.get(["hkticketkiller_deadline"]).then(deadlineData => {
+                            console.log("Value currently is " + deadlineData.hkticketkiller_deadline);
+                            let deadline = deadlineData.hkticketkiller_deadline;
+                            if (sender.tab && sender.tab.id) {
+                                chrome.tabs.sendMessage(sender.tab.id, {
+                                    'action': "getDeadlineCallback",
+                                    'deadline': deadline
+                                });
+                            } else {
+                                chrome.runtime.sendMessage({
+                                    'action': "getDeadlineCallback",
+                                    'deadline': deadline
+                                });
+                            }
+                            sendResponse({
+                                'deadline': deadline
+                            });
+                        })['catch'](deadlineError => {
+                            console.log("Error:", deadlineError);
+                        });
+                    } else {
+                        if (request.action === 'getDeadlineFromKey') {
+                            let validationUrl = "https://hkticketkiller-backend-latest.vercel.app/v0/validation/" + request.key;
+                            fetch(validationUrl, {
+                                'mode': "cors"
+                            }).then(validationResponse => validationResponse.json()).then(validationData => {
+                                console.log("validation data:", validationData);
+                                if (validationData && validationData.error) {
+                                    throw validationData.error;
+                                }
+                                if (!validationData) {
+                                    sendResponse(null);
+                                } else {
+                                    chrome.storage.local.set({
+                                        'hkticketkiller_deadline': validationData.unixtime,
+                                        'hkticketkiller_enabled': false,
+                                        'hkticketkiller_disabled': false,
+                                        'hkticketkiller_key': request.key
+                                    }).then(() => {
+                                        checkDeadline(sender);
+                                    });
+                                    sendResponse({
+                                        'deadline': validationData.unixtime
+                                    });
+                                }
+                            })["catch"](validationError => {
+                                console.log("Error:", validationError);
+                                let errorMessage = {
+                                    'action': "checkDeadlineCallback",
+                                    'disable': true,
+                                    'error': validationError.message
+                                };
+                                if (sender.tab && sender.tab.id) {
+                                    chrome.tabs.sendMessage(sender.tab.id, errorMessage);
+                                } else {
+                                    chrome.runtime.sendMessage(errorMessage);
+                                }
+                            });
+                        } else {
+                            if (request.action === "setDeadline") {
+                                chrome.storage.local.set({
+                                    'hkticketkiller_deadline': request.deadline
+                                });
+                                sendResponse(true);
+                            } else {
+                                if (request.action === 'updateOptions') {
+                                    chrome.storage.local.set({
+                                        'hkticketkiller_options': request.options
+                                    });
+                                    sendResponse(true);
+                                } else {
+                                    if (request.action === "getOptions") {
+                                        chrome.storage.local.get(['hkticketkiller_options']).then(optionsData => {
+                                            console.log(optionsData.hkticketkiller_options);
+                                            if (sender.tab && sender.tab.id) {
+                                                chrome.tabs.sendMessage(sender.tab.id, {
+                                                    'action': "getOptionsCallback",
+                                                    'options': optionsData.hkticketkiller_options
+                                                });
+                                            } else {
+                                                chrome.runtime.sendMessage({
+                                                    'action': "getOptionsCallback",
+                                                    'options': optionsData.hkticketkiller_options
+                                                });
+                                            }
+                                            sendResponse(optionsData.hkticketkiller_options);
+                                        });
+                                    } else {
+                                        if (request.action === "goToSettings") {
+                                            let settingsUrl = "https://hkticketkiller.com/settings";
+                                            if (request.page) {
+                                                settingsUrl = "https://hkticketkiller.com/settings?page=" + request.page;
+                                            }
+                                            openNewTab(settingsUrl);
+                                            sendResponse(true);
+                                        } else {
+                                            if (request.action === "forceReload") {
+                                                const forceReloadIndex = stopForceReloadIds.indexOf(sender.tab.id);
+                                                if (forceReloadIndex > -0x1) {
+                                                    stopForceReloadIds.splice(forceReloadIndex, 0x1);
+                                                }
+                                                setTimeout(() => {
+                                                    forceReload(sender.tab.id);
+                                                }, request.delay || 0x64);
+                                                sendResponse(true);
+                                            } else if (request.action === 'stopForceReload') {
+                                                stopForceReloadIds.push(sender.tab.id);
+                                                console.log("stopForceReload");
+                                                console.log(stopForceReloadIds);
+                                                sendResponse(true);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return true;
+});

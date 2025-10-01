@@ -1,8 +1,170 @@
-const _0xd570d7=_0x1f64;(function(_0xe7cc01,_0x5bb9b0){const _0xe00ef7=_0x1f64,_0x5f0e21=_0xe7cc01();while(!![]){try{const _0x1e5598=-parseInt(_0xe00ef7(0x175))/0x1*(parseInt(_0xe00ef7(0x149))/0x2)+-parseInt(_0xe00ef7(0x163))/0x3+parseInt(_0xe00ef7(0x138))/0x4*(parseInt(_0xe00ef7(0x161))/0x5)+parseInt(_0xe00ef7(0x18b))/0x6*(-parseInt(_0xe00ef7(0x155))/0x7)+parseInt(_0xe00ef7(0x188))/0x8*(-parseInt(_0xe00ef7(0x158))/0x9)+-parseInt(_0xe00ef7(0x151))/0xa*(parseInt(_0xe00ef7(0x14e))/0xb)+parseInt(_0xe00ef7(0x14d))/0xc*(parseInt(_0xe00ef7(0x152))/0xd);if(_0x1e5598===_0x5bb9b0)break;else _0x5f0e21['push'](_0x5f0e21['shift']());}catch(_0x2045a8){_0x5f0e21['push'](_0x5f0e21['shift']());}}}(_0x4b60,0x903dd));function _0x1f64(_0x3f9135,_0x1bc9dc){const _0x4b6087=_0x4b60();return _0x1f64=function(_0x1f64f0,_0x220663){_0x1f64f0=_0x1f64f0-0x12e;let _0x24de98=_0x4b6087[_0x1f64f0];return _0x24de98;},_0x1f64(_0x3f9135,_0x1bc9dc);}let scale=0x1,baseWidth=0x12c,ExtensionStatus={'inactive':_0xd570d7(0x178),'active':_0xd570d7(0x15d),'outdated':'已過期'},title=document[_0xd570d7(0x137)](_0xd570d7(0x174)),desc=document[_0xd570d7(0x137)](_0xd570d7(0x145)),activateInput=document['getElementById']('activate_input'),activateButton=document['getElementById'](_0xd570d7(0x146)),mainContainer=document['getElementById']('main_container'),loadingContainer=document[_0xd570d7(0x137)](_0xd570d7(0x167)),logo=document[_0xd570d7(0x137)](_0xd570d7(0x131)),checkKeyUrl=document[_0xd570d7(0x137)](_0xd570d7(0x12e)),currentStatus=ExtensionStatus[_0xd570d7(0x154)],deadline,options={'hkticketing':{'speed':0x3}},showLoadingContainer=function(_0x39b0af){const _0x226196=_0xd570d7;_0x39b0af?(mainContainer['style'][_0x226196(0x132)]=_0x226196(0x147),loadingContainer[_0x226196(0x17c)][_0x226196(0x132)]=_0x226196(0x135)):(mainContainer[_0x226196(0x17c)][_0x226196(0x132)]='flex',loadingContainer[_0x226196(0x17c)]['display']='none');},getDeadlineFromKey=async function(_0x4c2358){const _0x3957bf=_0xd570d7;let _0x4994c6=await chrome[_0x3957bf(0x162)][_0x3957bf(0x143)]({'action':_0x3957bf(0x130),'key':_0x4c2358});console[_0x3957bf(0x164)]('response',_0x4994c6);if(_0x4994c6)return _0x4994c6[_0x3957bf(0x14c)];return null;},initActivateButton=function(){const _0x1b676a=_0xd570d7;activateButton[_0x1b676a(0x16c)]=async function(){const _0x2f3618=_0x1b676a;showLoadingContainer(!![]);try{if(!activateInput['value'])throw'未輸入金鑰，請再試一次';checkKeyUrl[_0x2f3618(0x176)](_0x2f3618(0x17d),_0x2f3618(0x157)+activateInput[_0x2f3618(0x187)]);let _0x449be0=await getDeadlineFromKey(activateInput['value']);return;if(!_0x449be0)throw _0x2f3618(0x13a);await chrome[_0x2f3618(0x162)][_0x2f3618(0x143)]({'action':'setDeadline','deadline':_0x449be0}),setStatus(await getStatus());}catch(_0xb97598){console[_0x2f3618(0x164)](_0xb97598),desc[_0x2f3618(0x142)]=JSON[_0x2f3618(0x148)](_0xb97598);}return;activateInput[_0x2f3618(0x187)]='',showLoadingContainer(![]);};},initOptionsButton=function(){const _0x229e47=_0xd570d7;let _0x514882=document[_0x229e47(0x137)](_0x229e47(0x156));_0x514882[_0x229e47(0x16c)]=async function(){const _0x176514=_0x229e47;let _0x55c63f=await chrome[_0x176514(0x162)]['sendMessage']({'action':_0x176514(0x179)});return;let _0x4951a9=document['getElementById'](_0x176514(0x13c));_0x4951a9[_0x176514(0x17c)]['display']='flex',mainContainer[_0x176514(0x17c)][_0x176514(0x132)]=_0x176514(0x147);};},createToggle=function(_0x42c7b1){const _0x1d8577=_0xd570d7;let _0x105772=_0x1d8577(0x15a)+Math[_0x1d8577(0x18a)]()['toString'](0x24)[_0x1d8577(0x171)](0x2,0x10),_0x338efc=_0x1d8577(0x13e)+Math[_0x1d8577(0x18a)]()[_0x1d8577(0x15c)](0x18)[_0x1d8577(0x171)](0x2,0x10);const _0x1d2378=document['createElement'](_0x1d8577(0x173)),_0x2b8092=document['createElement']('input');_0x2b8092[_0x1d8577(0x176)](_0x1d8577(0x17b),_0x1d8577(0x166)),_0x2b8092[_0x1d8577(0x176)]('id',_0x105772),_0x2b8092[_0x1d8577(0x15b)][_0x1d8577(0x14a)](_0x1d8577(0x170));const _0x41309c=document[_0x1d8577(0x181)](_0x1d8577(0x16e));return _0x41309c[_0x1d8577(0x176)]('id',_0x338efc),_0x41309c[_0x1d8577(0x17c)][_0x1d8577(0x185)](_0x1d8577(0x139),'#be1931'),_0x1d2378[_0x1d8577(0x183)](_0x2b8092),_0x1d2378[_0x1d8577(0x183)](_0x41309c),_0x41309c[_0x1d8577(0x15b)][_0x1d8577(0x14a)](_0x1d8577(0x150)),_0x42c7b1[_0x1d8577(0x13d)](_0x1d2378),_0x105772;},initOptions=async function(){const _0x83ab9d=_0xd570d7;let _0x4ca1a1=document['getElementById'](_0x83ab9d(0x13c));_0x4ca1a1['style'][_0x83ab9d(0x132)]=_0x83ab9d(0x135);let _0x56a787=document[_0x83ab9d(0x137)](_0x83ab9d(0x140)),_0x42cd03=document[_0x83ab9d(0x137)]('options_hkticketing_range_desc');if(!options)options={};options[_0x83ab9d(0x16b)]&&(_0x56a787[_0x83ab9d(0x187)]=options[_0x83ab9d(0x16b)][_0x83ab9d(0x134)],_0x42cd03[_0x83ab9d(0x142)]='快達票自動刷新速度:\x20'+_0x56a787['value']+'秒');_0x56a787[_0x83ab9d(0x180)]=function(){const _0x538b2c=_0x83ab9d;console['log'](this[_0x538b2c(0x187)]),_0x42cd03['innerText']=_0x538b2c(0x17f)+this[_0x538b2c(0x187)]+'秒';if(!options[_0x538b2c(0x16b)])options[_0x538b2c(0x16b)]={};options[_0x538b2c(0x16b)][_0x538b2c(0x134)]=this[_0x538b2c(0x187)],chrome['runtime']['sendMessage']({'action':_0x538b2c(0x16f),'options':options});};let _0x5bc5bb=document[_0x83ab9d(0x137)](_0x83ab9d(0x136)),_0x3dc5aa=createToggle(_0x5bc5bb),_0x4117a0=document[_0x83ab9d(0x137)](_0x3dc5aa);options[_0x83ab9d(0x133)]&&options[_0x83ab9d(0x133)][_0x83ab9d(0x177)]&&(_0x4117a0[_0x83ab9d(0x153)]=options['urbtix']['paymentInfo'][_0x83ab9d(0x14f)]);_0x4117a0['addEventListener']('change',function(){const _0x14de57=_0x83ab9d;if(!options[_0x14de57(0x133)])options['urbtix']={};if(!options[_0x14de57(0x133)]['paymentInfo'])options['urbtix']['paymentInfo']={};options[_0x14de57(0x133)][_0x14de57(0x177)][_0x14de57(0x14f)]=_0x4117a0['checked'],chrome[_0x14de57(0x162)][_0x14de57(0x143)]({'action':_0x14de57(0x16f),'options':options}),options[_0x14de57(0x133)][_0x14de57(0x177)][_0x14de57(0x14f)]&&chrome[_0x14de57(0x162)][_0x14de57(0x143)]({'action':_0x14de57(0x179),'page':_0x14de57(0x133)});});let _0x5eddce=document[_0x83ab9d(0x137)]('toggle_cityline_autofill'),_0x2d4a0b=createToggle(_0x5eddce),_0x4795a3=document[_0x83ab9d(0x137)](_0x2d4a0b);options[_0x83ab9d(0x160)]&&options[_0x83ab9d(0x160)][_0x83ab9d(0x177)]&&(_0x4795a3[_0x83ab9d(0x153)]=options[_0x83ab9d(0x160)][_0x83ab9d(0x177)][_0x83ab9d(0x14f)]),_0x4795a3[_0x83ab9d(0x16a)](_0x83ab9d(0x189),function(){const _0x51f055=_0x83ab9d;if(!options['cityline'])options[_0x51f055(0x160)]={};if(!options[_0x51f055(0x160)]['paymentInfo'])options['cityline']['paymentInfo']={};options[_0x51f055(0x160)][_0x51f055(0x177)]['enable']=_0x4795a3[_0x51f055(0x153)],chrome[_0x51f055(0x162)][_0x51f055(0x143)]({'action':'updateOptions','options':options}),options[_0x51f055(0x160)][_0x51f055(0x177)][_0x51f055(0x14f)]&&chrome[_0x51f055(0x162)][_0x51f055(0x143)]({'action':_0x51f055(0x179),'page':_0x51f055(0x160)});}),initOptionsButton();},setStatus=function(_0x371230){const _0x3bb2fa=_0xd570d7;currentStatus=_0x371230;if(currentStatus===ExtensionStatus[_0x3bb2fa(0x182)]){let _0x4f8ceb=new Date(deadline*0x3e8);title[_0x3bb2fa(0x142)]=currentStatus+'\x20('+_0x4f8ceb[_0x3bb2fa(0x13f)](_0x3bb2fa(0x12f))+')',desc[_0x3bb2fa(0x142)]='請更新產品金鑰',activateButton['innerHTML']='更新';}else{if(currentStatus===ExtensionStatus[_0x3bb2fa(0x159)]){let _0x5ab1b1=new Date(deadline*0x3e8);title[_0x3bb2fa(0x142)]=currentStatus,desc[_0x3bb2fa(0x142)]=_0x3bb2fa(0x172)+_0x5ab1b1[_0x3bb2fa(0x13f)](_0x3bb2fa(0x12f)),activateButton[_0x3bb2fa(0x17c)][_0x3bb2fa(0x132)]=_0x3bb2fa(0x147),activateInput[_0x3bb2fa(0x17c)][_0x3bb2fa(0x132)]='none';}}},getDeadline=async function(){const _0x580a00=_0xd570d7;return await chrome['runtime'][_0x580a00(0x143)]({'action':_0x580a00(0x165)});},getOptions=async function(){const _0x673c75=_0xd570d7;try{let _0x465313=await chrome['runtime']['sendMessage']({'action':'getOptions'});if(_0x465313)options=_0x465313;}catch(_0x1791b9){console[_0x673c75(0x164)](_0x1791b9);}},handleScale=function(){const _0x498a6c=_0xd570d7;let _0x31aa1c=screen[_0x498a6c(0x141)],_0x4e6bcb=document[_0x498a6c(0x168)][_0x498a6c(0x186)]()[_0x498a6c(0x141)];scale=_0x4e6bcb/baseWidth,document['body']['style']['width']=0x12c*scale+'px';var _0x472600=document['querySelector'](_0x498a6c(0x15e));_0x472600[_0x498a6c(0x17c)][_0x498a6c(0x185)]('--scale',scale);},main=async function(){
+let scale = 0x1;
+let title = document.getElementById("title");
+let desc = document.getElementById("desc");
+let activateInput = document.getElementById('activate_input');
+let activateButton = document.getElementById("activate_button");
+let mainContainer = document.getElementById('main_container');
+let loadingContainer = document.getElementById("loading_container");
+let checkKeyUrl = document.getElementById("check_key_url");
+let currentStatus = "未啟用";
+let deadline;
+let options = {
+    'hkticketing': {
+        'speed': 0x3
+    }
+};
+let showLoadingContainer = function(show) {
+    if (show) {
+        mainContainer.style.display = "none";
+        loadingContainer.style.display = "flex";
+    } else {
+        mainContainer.style.display = 'flex';
+        loadingContainer.style.display = 'none';
+    }
+};
+let initOptionsButton = function() {
+    let optionsButton = document.getElementById("all_settings");
+    optionsButton.onclick = async function() {
+        return;
+        let optionsContainer = document.getElementById("options_container");
+        optionsContainer.style.display = 'flex';
+        mainContainer.style.display = "none";
+    };
+};
+let createToggle = function(targetElement) {
+    let toggleId = "toggle-" + Math.random().toString(0x24).substring(0x2, 0x10);
+    let indicatorId = "togid" + Math.random().toString(0x18).substring(0x2, 0x10);
+    const label = document.createElement("LABEL");
+    const checkbox = document.createElement('input');
+    checkbox.setAttribute("type", "checkbox");
+    checkbox.setAttribute('id', toggleId);
+    checkbox.classList.add("toG");
+    const indicator = document.createElement("div");
+    indicator.setAttribute('id', indicatorId);
+    indicator.style.setProperty("--check-toggle", '#be1931');
+    label.append(checkbox);
+    label.append(indicator);
+    indicator.classList.add("mytoggle");
+    targetElement.appendChild(label);
+    return toggleId;
+};
+let initOptions = async function() {
+    let optionsContainer = document.getElementById("options_container");
+    optionsContainer.style.display = "flex";
+    let speedRange = document.getElementById("options_hkticketing_range");
+    let speedRangeDescription = document.getElementById('options_hkticketing_range_desc');
+    if (!options) {
+        options = {};
+    }
+    if (options.hkticketing) {
+        speedRange.value = options.hkticketing.speed;
+        speedRangeDescription.innerText = "快達票自動刷新速度: " + speedRange.value + '秒';
+    }
+    speedRange.oninput = function() {
+        console.log(this.value);
+        speedRangeDescription.innerText = "快達票自動刷新速度: " + this.value + '秒';
+        if (!options.hkticketing) {
+            options.hkticketing = {};
+        }
+        options.hkticketing.speed = this.value;
+        chrome.runtime.sendMessage({
+            'action': "updateOptions",
+            'options': options
+        });
+    };
+    let urbtixToggleContainer = document.getElementById("toggle_urbtix_autofill");
+    let urbtixToggleId = createToggle(urbtixToggleContainer);
+    let urbtixToggle = document.getElementById(urbtixToggleId);
+    if (options.urbtix && options.urbtix.paymentInfo) {
+        urbtixToggle.checked = options.urbtix.paymentInfo.enable;
+    }
+    urbtixToggle.addEventListener('change', function() {
+        if (!options.urbtix) {
+            options.urbtix = {};
+        }
+        if (!options.urbtix.paymentInfo) {
+            options.urbtix.paymentInfo = {};
+        }
+        options.urbtix.paymentInfo.enable = urbtixToggle.checked;
+        chrome.runtime.sendMessage({
+            'action': "updateOptions",
+            'options': options
+        });
+        if (options.urbtix.paymentInfo.enable) {
+            chrome.runtime.sendMessage({
+                'action': "goToSettings",
+                'page': "urbtix"
+            });
+        }
+    });
+    let citylineToggleContainer = document.getElementById('toggle_cityline_autofill');
+    let citylineToggleId = createToggle(citylineToggleContainer);
+    let citylineToggle = document.getElementById(citylineToggleId);
+    if (options.cityline && options.cityline.paymentInfo) {
+        citylineToggle.checked = options.cityline.paymentInfo.enable;
+    }
+    citylineToggle.addEventListener("change", function() {
+        if (!options.cityline) {
+            options.cityline = {};
+        }
+        if (!options.cityline.paymentInfo) {
+            options.cityline.paymentInfo = {};
+        }
+        options.cityline.paymentInfo.enable = citylineToggle.checked;
+        chrome.runtime.sendMessage({
+            'action': 'updateOptions',
+            'options': options
+        });
+        if (options.cityline.paymentInfo.enable) {
+            chrome.runtime.sendMessage({
+                'action': "goToSettings",
+                'page': "cityline"
+            });
+        }
+    });
+    initOptionsButton();
+};
+let setStatus = function(status) {
+    currentStatus = status;
+    if (currentStatus === '已過期') {
+        let expiredDate = new Date(deadline * 0x3e8);
+        title.innerText = currentStatus + " (" + expiredDate.toLocaleString("zh-HK") + ')';
+        desc.innerText = '請更新產品金鑰';
+        activateButton.innerHTML = '更新';
+    } else {
+        if (currentStatus === "已啟用") {
+            let expiryDate = new Date(deadline * 0x3e8);
+            title.innerText = currentStatus;
+            desc.innerText = "有效期至: " + expiryDate.toLocaleString("zh-HK");
+            activateButton.style.display = "none";
+            activateInput.style.display = 'none';
+        }
+    }
+};
+let getOptions = async function() {
+    try {
+        let fetchedOptions = await chrome.runtime.sendMessage({
+            'action': 'getOptions'
+        });
+        if (fetchedOptions) {
+            options = fetchedOptions;
+        }
+    } catch (optionsError) {
+        console.log(optionsError);
+    }
+};
+let handleScale = function() {
+    let popupWidth = document.documentElement.getBoundingClientRect().width;
+    scale = popupWidth / 0x12c;
+    document.body.style.width = 0x12c * scale + 'px';
+    var rootElement = document.querySelector(":root");
+    rootElement.style.setProperty('--scale', scale);
+};
+let main = async function() {
     handleScale();
     // 跳过key校验，直接激活
-    currentStatus = ExtensionStatus['active'];
-    deadline = Math.floor(Date.now() / 1000) + 365 * 24 * 60 * 60; // 伪造一年有效期
+    currentStatus = "已啟用";
+    deadline = Math.floor(Date.now() / 1000) + 31536000; // 伪造一年有效期
 
     // 设置存储值以确保background.js正确识别扩展状态
     await chrome.storage.local.set({
@@ -13,8 +175,9 @@ const _0xd570d7=_0x1f64;(function(_0xe7cc01,_0x5bb9b0){const _0xe00ef7=_0x1f64,_
     });
 
     // 触发background.js检查deadline，这会激活所有功能
-    await chrome.runtime.sendMessage({'action': 'checkDeadline'});
-
+    await chrome.runtime.sendMessage({
+        'action': 'checkDeadline'
+    });
     title.innerText = currentStatus;
     desc.innerText = '已跳过金鑰校驗，功能已啟用';
     activateButton.style.display = 'none';
@@ -23,4 +186,34 @@ const _0xd570d7=_0x1f64;(function(_0xe7cc01,_0x5bb9b0){const _0xe00ef7=_0x1f64,_
     await getOptions(); // 获取选项
     await initOptions(); // 初始化并显示选项界面
     return true;
-};function _0x4b60(){const _0x3cb0e3=['setAttribute','paymentInfo','未啟用','goToSettings','key','type','style','href','error','快達票自動刷新速度:\x20','oninput','createElement','outdated','append','disable','setProperty','getBoundingClientRect','value','144232cMnctt','change','random','72966YNdXpk','check_key_url','zh-HK','getDeadlineFromKey','logo','display','urbtix','speed','flex','toggle_urbtix_autofill','getElementById','413752fUyWCH','--check-toggle','金鑰無效，請再試一次','options','options_container','appendChild','togid','toLocaleString','options_hkticketing_range','width','innerText','sendMessage','getOptionsCallback','desc','activate_button','none','stringify','2084ugcPlN','add','onMessage','deadline','12912072LYgfZn','220bnRvCx','enable','mytoggle','584270dDYwfw','26kGRsXO','checked','inactive','28OgrWxQ','all_settings','https://hkticketkiller.com/check_key?key=','171VfXWQY','active','toggle-','classList','toString','已啟用',':root','剩餘金鑰使用次數','cityline','45joTTaZ','runtime','1684362KkEQlm','log','checkDeadline','checkbox','loading_container','documentElement','checkDeadlineCallback','addEventListener','hkticketing','onclick','action','div','updateOptions','toG','substring','有效期至:\x20','LABEL','title','356ievguO'];_0x4b60=function(){return _0x3cb0e3;};return _0x4b60();}main(),chrome[_0xd570d7(0x162)][_0xd570d7(0x14b)]['addListener'](async function(_0x1aa2b5,_0x124257,_0x46fd51){const _0x2c372e=_0xd570d7;if(_0x1aa2b5[_0x2c372e(0x16d)]===_0x2c372e(0x169)){deadline=_0x1aa2b5[_0x2c372e(0x14c)];_0x1aa2b5[_0x2c372e(0x17a)]&&(checkKeyUrl[_0x2c372e(0x176)](_0x2c372e(0x17d),'https://hkticketkiller.com/check_key?key='+_0x1aa2b5[_0x2c372e(0x17a)]),checkKeyUrl[_0x2c372e(0x142)]=_0x2c372e(0x15f));if(_0x1aa2b5['error'])setStatus(ExtensionStatus[_0x2c372e(0x154)]),desc['innerText']=_0x1aa2b5[_0x2c372e(0x17e)];else{if(!deadline)setStatus(ExtensionStatus[_0x2c372e(0x154)]);else _0x1aa2b5[_0x2c372e(0x184)]?setStatus(ExtensionStatus[_0x2c372e(0x182)]):(setStatus(ExtensionStatus[_0x2c372e(0x159)]),getOptions());}showLoadingContainer(![]),_0x46fd51(!![]);}else _0x1aa2b5[_0x2c372e(0x16d)]===_0x2c372e(0x144)&&(options=_0x1aa2b5[_0x2c372e(0x13b)],initOptions(),_0x46fd51(!![]));return!![];});
+};
+main();
+chrome.runtime.onMessage.addListener(async function(message, sender, sendResponse) {
+    if (message.action === "checkDeadlineCallback") {
+        deadline = message.deadline;
+        if (message.key) {
+            checkKeyUrl.setAttribute("href", 'https://hkticketkiller.com/check_key?key=' + message.key);
+            checkKeyUrl.innerText = "剩餘金鑰使用次數";
+        }
+        if (message.error) {
+            setStatus("未啟用");
+            desc.innerText = message.error;
+        } else {
+            if (!deadline) {
+                setStatus("未啟用");
+            } else if (message.disable) {
+                setStatus('已過期');
+            } else {
+                setStatus("已啟用");
+                getOptions();
+            }
+        }
+        showLoadingContainer(false);
+        sendResponse(true);
+    } else if (message.action === "getOptionsCallback") {
+        options = message.options;
+        initOptions();
+        sendResponse(true);
+    }
+    return true;
+});
