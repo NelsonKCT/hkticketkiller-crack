@@ -1,1 +1,263 @@
-const _0x3bf158=_0x17aa;function _0x3fad(){const _0x3a9288=['onclick','hkticketkiller-auto-retry','onMessage','getOptionsCallback','started','scheduledReload','add','select\x20date','2182360RORyam','includes','appendChild','stopAuto','lastTimestamp','8GESREZ','Auto\x20retry','addEventListener','now','addListener','toISOString','由下至上','replaceAll','length','options','querySelectorAll','runtime','HKTicketKiller:','qtySelected','complete','substring','log','none','innerText','.border.cursor-pointer.rounded-xl','2999340VocAyV','No\x20available\x20ticket','PurchasePageAddCartHelper.run()','location','sendMessage','click','Stop','splice','blur','forEach','random','缺貨登記','href','priceSelectionRule','enable','shift','Created\x20retry\x20btn.','16SWHUiL','text-sm','316405TjkwGc','stringify','cursor-pointer','split','8187739xYYyBS','3277746XlUCip','createRetryButton','firstAttempt','48DQDzlT','forceReload','dispatchEvent','reloadDelay','6391674FHarya','target','style','disable','addCart','button','缺貨登記,Reserve','stopForceReload','rounded-full','text-white','btn-linear-bg','some','Start\x20Loading\x20bot','readystatechange','run','checkDeadline','w-[160px]','Reserve','floor','value','216119yduPWp','button.btn-linear-bg','Bot\x20outdated.\x20Please\x20update\x20to\x20the\x20latest\x20version.','purchaseButton','createElement','classList','pop','disabled.','display','yes','autoClick','focus','缺货登记','querySelector','dateSelected','trim','push','dataset','ignore','form\x20input','qty','Click\x20purchase\x20button.','retryButton','interval','.text-right\x20button.cursor-pointer.relative.overflow-hidden','由上至下','div','getOptions','form\x20button','Set\x20to\x20true','overflow-hidden','membershipNumber','scripts/hkticketkiller.js','action','priceSelected','getElementById','dateSelectionRule'];_0x3fad=function(){return _0x3a9288;};return _0x3fad();}(function(_0x1889fa,_0x4eb464){const _0x65412e=_0x17aa,_0x347619=_0x1889fa();while(!![]){try{const _0x5ef52a=-parseInt(_0x65412e(0xfe))/0x1*(parseInt(_0x65412e(0x130))/0x2)+-parseInt(_0x65412e(0x144))/0x3+-parseInt(_0x65412e(0x15f))/0x4*(-parseInt(_0x65412e(0x157))/0x5)+parseInt(_0x65412e(0x163))/0x6+parseInt(_0x65412e(0x15b))/0x7+-parseInt(_0x65412e(0x155))/0x8*(parseInt(_0x65412e(0x15c))/0x9)+parseInt(_0x65412e(0x12b))/0xa;if(_0x5ef52a===_0x4eb464)break;else _0x347619['push'](_0x347619['shift']());}catch(_0x4674e2){_0x347619['push'](_0x347619['shift']());}}}(_0x3fad,0x97590));let hkticketkiller,hkticketkiller_path=_0x3bf158(0x11e),mainInterval,enabled=!![],fantopiaOptions={'autofillMembershipNumber':{'enable':![],'membershipNumber':''},'addCart':{'enable':![],'dateSelectionRule':'由右至左','priceSelectionRule':_0x3bf158(0x136),'qty':0x2,'ignore':_0x3bf158(0x169),'reloadDelay':0xa}},debugLog=function(_0x46d0ea){const _0x25f005=_0x3bf158;console[_0x25f005(0x140)](_0x25f005(0x13c),_0x46d0ea);},importHkticketkillerFuncs=async function(){const _0x426b06=_0x3bf158,_0x336708=chrome[_0x426b06(0x13b)]['getURL'](hkticketkiller_path);hkticketkiller=await import(_0x336708);},init=async function(){const _0x5439a3=_0x3bf158;debugLog(_0x5439a3(0xf6)),await importHkticketkillerFuncs(),mainInterval=setInterval(main,0x1f4),chrome['runtime'][_0x5439a3(0x148)]({'action':_0x5439a3(0xf9)}),chrome[_0x5439a3(0x13b)][_0x5439a3(0x148)]({'action':_0x5439a3(0x119)});},tools={'secondToTime':function(_0x3819f4){const _0x2c6ddb=_0x3bf158;return new Date(_0x3819f4*0x3e8)[_0x2c6ddb(0x135)]()[_0x2c6ddb(0x13f)](0xe,0x13);},'createDivWithClass':function(_0x54a663){const _0x25caf7=_0x3bf158;let _0x5c35b8=document['createElement'](_0x25caf7(0x118));for(let _0x3d727a=0x0;_0x3d727a<_0x54a663[_0x25caf7(0x138)];_0x3d727a++){_0x5c35b8[_0x25caf7(0x103)][_0x25caf7(0x129)](_0x54a663[_0x3d727a]);}return _0x5c35b8;},'getRandNum':function(_0x1cc82c,_0x173ee1){return Math['floor'](Math['random']()*(_0x173ee1-_0x1cc82c+0x1))+_0x1cc82c;}},clickNextbutton=function(){const _0xe8e0=_0x3bf158;let _0x57b809=document[_0xe8e0(0x10b)](_0xe8e0(0xff));if(!_0x57b809)return;_0x57b809[_0xe8e0(0x149)]();const _0x4a1479=tools['getRandNum'](0x3e8,0x7d0);setTimeout(clickNextbutton,_0x4a1479);};const PresaleMemberCodeHelper={'firstAttempt':![],'run':function(){const _0x100cc4=_0x3bf158;if(!fantopiaOptions['autofillMembershipNumber'][_0x100cc4(0x152)])return;if(!this[_0x100cc4(0x15e)]){let _0x5eadb0=document[_0x100cc4(0x10b)](_0x100cc4(0x111));if(!_0x5eadb0)return;_0x5eadb0[_0x100cc4(0x109)](),_0x5eadb0[_0x100cc4(0xfd)]=fantopiaOptions['autofillMembershipNumber'][_0x100cc4(0x11d)]||'',_0x5eadb0[_0x100cc4(0x14c)](),_0x5eadb0[_0x100cc4(0x161)](new Event('input',{'bubbles':!![]})),this[_0x100cc4(0x15e)]=!![];}let _0x415417=document['querySelector'](_0x100cc4(0x11a));if(_0x415417)_0x415417[_0x100cc4(0x149)]();}},PurchasePageAddCartHelper={'priceSelected':![],'dateSelected':![],'qtySelected':![],'complete':![],'lastTimestamp':null,'interval':0x1f4,'scheduledReload':![],'reloadDelay':null,'run':function(){const _0x1c6765=_0x3bf158;if(this[_0x1c6765(0x13e)])return;else{if(!fantopiaOptions[_0x1c6765(0x167)][_0x1c6765(0x152)]||!fantopiaOptions[_0x1c6765(0x167)]['qty'])return;}!this['scheduledReload']&&fantopiaOptions[_0x1c6765(0x167)][_0x1c6765(0x162)]&&(chrome['runtime'][_0x1c6765(0x148)]({'action':_0x1c6765(0x160),'delay':fantopiaOptions['addCart']['reloadDelay']*0x3e8}),this[_0x1c6765(0x128)]=!![]);let _0x5b0e7c=Date[_0x1c6765(0x133)]();if(this[_0x1c6765(0x12f)]&&_0x5b0e7c-this['lastTimestamp']<this[_0x1c6765(0x115)])return;this[_0x1c6765(0x12f)]=_0x5b0e7c,debugLog(_0x1c6765(0x146));if(!this[_0x1c6765(0x10c)]){let _0xae9f6=document[_0x1c6765(0x13a)]('.flex-wrap\x20.flex-col'),_0x14c911=[];_0xae9f6[_0x1c6765(0x14d)](_0x3f2010=>{const _0x37276c=_0x1c6765;_0x14c911[_0x37276c(0x10e)](_0x3f2010);});while(_0x14c911[_0x1c6765(0x138)]>0x0){let _0x2acb07;if(fantopiaOptions[_0x1c6765(0x167)][_0x1c6765(0x122)]==='由左至右')_0x2acb07=_0x14c911[_0x1c6765(0x153)]();else fantopiaOptions[_0x1c6765(0x167)][_0x1c6765(0x122)]==='由右至左'?_0x2acb07=_0x14c911['pop']():_0x2acb07=_0x14c911[_0x1c6765(0x14b)](Math[_0x1c6765(0xfc)](Math[_0x1c6765(0x14e)]()*_0x14c911[_0x1c6765(0x138)]),0x1)[0x0];_0x2acb07[_0x1c6765(0x149)]();break;}debugLog(_0x1c6765(0x12a)),this[_0x1c6765(0x10c)]=!![];return;}if(!this['qtySelected']){let _0x586244=document['querySelectorAll']('button.bg-dark2')[0x1];if(!_0x586244){let _0x5656c7=document['querySelectorAll'](_0x1c6765(0x143)),_0x4e528d=[];_0x5656c7['forEach'](_0xb12782=>{const _0x52674d=_0x1c6765;_0x4e528d[_0x52674d(0x10e)](_0xb12782);});let _0x2e4f77=fantopiaOptions['addCart'][_0x1c6765(0x110)],_0x17e191=[];_0x2e4f77&&(_0x2e4f77=_0x2e4f77[_0x1c6765(0x137)]('，',','),_0x17e191=_0x2e4f77[_0x1c6765(0x15a)](','));_0x17e191['push'](_0x1c6765(0x14f)),_0x17e191['push'](_0x1c6765(0x10a)),_0x17e191[_0x1c6765(0x10e)](_0x1c6765(0xfb));let _0x48fef4;while(_0x4e528d['length']>0x0){if(fantopiaOptions[_0x1c6765(0x167)][_0x1c6765(0x151)]===_0x1c6765(0x117))_0x48fef4=_0x4e528d[_0x1c6765(0x153)]();else fantopiaOptions['addCart']['priceSelectionRule']===_0x1c6765(0x136)?_0x48fef4=_0x4e528d[_0x1c6765(0x104)]():_0x48fef4=_0x4e528d[_0x1c6765(0x14b)](Math['floor'](Math[_0x1c6765(0x14e)]()*_0x4e528d['length']),0x1)[0x0];if(_0x17e191[_0x1c6765(0x16e)](_0x4fb118=>_0x48fef4[_0x1c6765(0x142)][_0x1c6765(0x12c)](_0x4fb118[_0x1c6765(0x10d)]())))_0x48fef4=null;else{_0x48fef4[_0x1c6765(0x149)](),debugLog('select\x20price'),this[_0x1c6765(0x120)]=!![];break;}}!_0x48fef4&&(debugLog(_0x1c6765(0x145)),window[_0x1c6765(0x147)][_0x1c6765(0x150)]=window[_0x1c6765(0x147)]['href']);return;}for(let _0x3e66ae=0x0;_0x3e66ae<fantopiaOptions[_0x1c6765(0x167)][_0x1c6765(0x112)];_0x3e66ae++){_0x586244[_0x1c6765(0x149)]();}this[_0x1c6765(0x13d)]=!![];}PurchasePageRetryHelper[_0x1c6765(0x114)]!==null&&(PurchasePageRetryHelper[_0x1c6765(0x114)][_0x1c6765(0x149)](),this['complete']=!![]);}},PurchasePageRetryHelper={'purchaseButton':null,'retryButton':null,'createRetryButton':function(){const _0xa9e286=_0x3bf158;let _0x5cf412=document[_0xa9e286(0x102)](_0xa9e286(0x168));_0x5cf412['id']=_0xa9e286(0x124),_0x5cf412['classList'][_0xa9e286(0x129)](_0xa9e286(0x159),'relative',_0xa9e286(0x11c),_0xa9e286(0xfa),'h-11',_0xa9e286(0x16d),_0xa9e286(0x16b),_0xa9e286(0x156),_0xa9e286(0x16c),'font-semibold'),_0x5cf412['innerText']=_0xa9e286(0x131),_0x5cf412[_0xa9e286(0x123)]=function(){const _0x229030=_0xa9e286;_0x5cf412['dataset'][_0x229030(0x127)]!=='yes'?(_0x5cf412[_0x229030(0x10f)][_0x229030(0x127)]=_0x229030(0x107),_0x5cf412[_0x229030(0x142)]=_0x229030(0x14a),PurchasePageRetryHelper[_0x229030(0x108)]()):(debugLog(_0x5cf412['dataset'][_0x229030(0x12e)]),_0x5cf412['dataset'][_0x229030(0x12e)]===_0x229030(0x107)?(debugLog('Set\x20to\x20false'),_0x5cf412[_0x229030(0x10f)][_0x229030(0x12e)]='no'):(debugLog(_0x229030(0x11b)),_0x5cf412[_0x229030(0x10f)][_0x229030(0x12e)]=_0x229030(0x107)),_0x5cf412['dataset'][_0x229030(0x12e)]==='yes'?_0x5cf412['innerText']=_0x229030(0x131):_0x5cf412[_0x229030(0x142)]=_0x229030(0x14a));},this[_0xa9e286(0x101)]&&(this[_0xa9e286(0x114)]=this['purchaseButton']['parentNode'][_0xa9e286(0x12d)](_0x5cf412),debugLog(_0xa9e286(0x154)));},'autoClick':function(){const _0x168760=_0x3bf158;let _0xbdec23=this['retryButton'],_0x1eed49=this[_0x168760(0x101)];if(!_0xbdec23||!_0x1eed49)return;let _0x5ee338=document['querySelector']('.ant-modal-mask'),_0x35ccf3=!!_0x5ee338&&!!_0x5ee338['style']&&_0x5ee338[_0x168760(0x165)][_0x168760(0x106)]!==_0x168760(0x141);_0xbdec23['dataset']['stopAuto']!==_0x168760(0x107)&&!_0x35ccf3?(debugLog(_0x168760(0x113)),_0x1eed49[_0x168760(0x149)]()):PresaleMemberCodeHelper['run'](),setTimeout(()=>{PurchasePageRetryHelper['autoClick']();},0x4b);}};function _0x17aa(_0x3819d4,_0x4e2253){const _0x3fad4c=_0x3fad();return _0x17aa=function(_0x17aa8c,_0x2ea9f2){_0x17aa8c=_0x17aa8c-0xf6;let _0x583c78=_0x3fad4c[_0x17aa8c];return _0x583c78;},_0x17aa(_0x3819d4,_0x4e2253);}let onPurchasePage=function(){const _0x2e39d7=_0x3bf158;if(!document[_0x2e39d7(0x121)]('hkticketkiller-auto-retry'))PurchasePageRetryHelper[_0x2e39d7(0x15d)]();PurchasePageAddCartHelper[_0x2e39d7(0xf8)]();},main=async function(){const _0x1f836a=_0x3bf158;if(!enabled){debugLog(_0x1f836a(0x105)),clearInterval(mainInterval);return;}PurchasePageRetryHelper[_0x1f836a(0x101)]=document['querySelector'](_0x1f836a(0x116)),PurchasePageRetryHelper[_0x1f836a(0x101)]?onPurchasePage():PurchasePageAddCartHelper[_0x1f836a(0x128)]&&(chrome['runtime']['sendMessage']({'action':_0x1f836a(0x16a)}),PurchasePageAddCartHelper[_0x1f836a(0x128)]=![]);};document['addEventListener'](_0x3bf158(0xf7),_0x19d987=>{const _0x14182=_0x3bf158;if(_0x19d987[_0x14182(0x164)]['readyState']===_0x14182(0x13e))try{}catch(_0x2f5b17){debugLog(JSON[_0x14182(0x158)](_0x2f5b17));}}),window[_0x3bf158(0x132)]('message',function(_0x36ca6c){},![]),chrome[_0x3bf158(0x13b)][_0x3bf158(0x125)][_0x3bf158(0x134)](async function(_0x385718,_0xc1b3ab,_0x1d75e0){const _0x3d19b1=_0x3bf158;if(_0x385718[_0x3d19b1(0x11f)]==='checkDeadlineCallback')_0x385718[_0x3d19b1(0x166)]?(enabled=![],debugLog(_0x3d19b1(0x100))):debugLog('Key\x20valid.'),_0x1d75e0(!![]);else _0x385718[_0x3d19b1(0x11f)]===_0x3d19b1(0x126)&&(_0x1d75e0(!![]),_0x385718[_0x3d19b1(0x139)]&&_0x385718[_0x3d19b1(0x139)]['fantopia']&&(fantopiaOptions=_0x385718[_0x3d19b1(0x139)]['fantopia']));return!![];}),init();
+let hkticketkiller;
+let mainInterval;
+let enabled = true;
+let fantopiaOptions = {
+    'autofillMembershipNumber': {
+        'enable': false,
+        'membershipNumber': ''
+    },
+    'addCart': {
+        'enable': false,
+        'dateSelectionRule': '由右至左',
+        'priceSelectionRule': "由下至上",
+        'qty': 0x2,
+        'ignore': "缺貨登記,Reserve",
+        'reloadDelay': 0xa
+    }
+};
+let debugLog = function(var_0) {
+    console.log("HKTicketKiller:", var_0);
+};
+let importHkticketkillerFuncs = async function() {
+    const var_1 = chrome.runtime.getURL("scripts/hkticketkiller.js");
+    hkticketkiller = await import(var_1);
+};
+let init = async function() {
+    debugLog("Start Loading bot");
+    await importHkticketkillerFuncs();
+    mainInterval = setInterval(main, 0x1f4);
+    chrome.runtime.sendMessage({
+        'action': "checkDeadline"
+    });
+    chrome.runtime.sendMessage({
+        'action': "getOptions"
+    });
+};
+let clickNextbutton = function() {
+    let var_2 = document.querySelector("button.btn-linear-bg");
+    if (!var_2) {
+        return;
+    }
+    var_2.click();
+    const var_3 = Math.floor(Math.random() * 1001) + 0x3e8;
+    setTimeout(clickNextbutton, var_3);
+};
+const PresaleMemberCodeHelper = {
+    'firstAttempt': false,
+    'run': function() {
+        if (!fantopiaOptions.autofillMembershipNumber.enable) {
+            return;
+        }
+        if (!this.firstAttempt) {
+            let var_4 = document.querySelector("form input");
+            if (!var_4) {
+                return;
+            }
+            var_4.focus();
+            var_4.value = fantopiaOptions.autofillMembershipNumber.membershipNumber || '';
+            var_4.blur();
+            var_4.dispatchEvent(new Event('input', {
+                'bubbles': true
+            }));
+            this.firstAttempt = true;
+        }
+        let var_5 = document.querySelector("form button");
+        if (var_5) {
+            var_5.click();
+        }
+    }
+};
+const PurchasePageAddCartHelper = {
+    'priceSelected': false,
+    'dateSelected': false,
+    'qtySelected': false,
+    'complete': false,
+    'lastTimestamp': null,
+    'interval': 0x1f4,
+    'scheduledReload': false,
+    'reloadDelay': null,
+    'run': function() {
+        if (this.complete) {
+            return;
+        } else {
+            if (!fantopiaOptions.addCart.enable || !fantopiaOptions.addCart.qty) {
+                return;
+            }
+        }
+        if (!this.scheduledReload && fantopiaOptions.addCart.reloadDelay) {
+            chrome.runtime.sendMessage({
+                'action': "forceReload",
+                'delay': fantopiaOptions.addCart.reloadDelay * 0x3e8
+            });
+            this.scheduledReload = true;
+        }
+        let var_6 = Date.now();
+        if (this.lastTimestamp && var_6 - this.lastTimestamp < this.interval) {
+            return;
+        }
+        this.lastTimestamp = var_6;
+        debugLog("PurchasePageAddCartHelper.run()");
+        if (!this.dateSelected) {
+            let var_7 = document.querySelectorAll(".flex-wrap .flex-col");
+            let var_8 = [];
+            var_7.forEach(var_9 => {
+                var_8.push(var_9);
+            });
+            while (var_8.length > 0x0) {
+                let var_10;
+                if (fantopiaOptions.addCart.dateSelectionRule === '由左至右') {
+                    var_10 = var_8.shift();
+                } else if (fantopiaOptions.addCart.dateSelectionRule === '由右至左') {
+                    var_10 = var_8.pop();
+                } else {
+                    var_10 = var_8.splice(Math.floor(Math.random() * var_8.length), 0x1)[0x0];
+                }
+                var_10.click();
+                break;
+            }
+            debugLog("select date");
+            this.dateSelected = true;
+            return;
+        }
+        if (!this.qtySelected) {
+            let var_11 = document.querySelectorAll('button.bg-dark2')[0x1];
+            if (!var_11) {
+                let var_12 = document.querySelectorAll(".border.cursor-pointer.rounded-xl");
+                let var_13 = [];
+                var_12.forEach(var_14 => {
+                    var_13.push(var_14);
+                });
+                let var_15 = fantopiaOptions.addCart.ignore;
+                let var_16 = [];
+                if (var_15) {
+                    var_15 = var_15.replaceAll('，', ',');
+                    var_16 = var_15.split(',');
+                }
+                var_16.push("缺貨登記");
+                var_16.push("缺货登记");
+                var_16.push("Reserve");
+                let var_17;
+                while (var_13.length > 0x0) {
+                    if (fantopiaOptions.addCart.priceSelectionRule === "由上至下") {
+                        var_17 = var_13.shift();
+                    } else if (fantopiaOptions.addCart.priceSelectionRule === "由下至上") {
+                        var_17 = var_13.pop();
+                    } else {
+                        var_17 = var_13.splice(Math.floor(Math.random() * var_13.length), 0x1)[0x0];
+                    }
+                    if (var_16.some(var_18 => var_17.innerText.includes(var_18.trim()))) {
+                        var_17 = null;
+                    } else {
+                        var_17.click();
+                        debugLog("select price");
+                        this.priceSelected = true;
+                        break;
+                    }
+                }
+                if (!var_17) {
+                    debugLog("No available ticket");
+                    window.location.href = window.location.href;
+                }
+                return;
+            }
+            for (let var_19 = 0x0; var_19 < fantopiaOptions.addCart.qty; var_19++) {
+                var_11.click();
+            }
+            this.qtySelected = true;
+        }
+    }
+};
+const PurchasePageRetryHelper = {
+    'purchaseButton': null,
+    'retryButton': null,
+    'createRetryButton': function() {
+        let var_20 = document.createElement("button");
+        var_20.id = "hkticketkiller-auto-retry";
+        var_20.classList.add("cursor-pointer", 'relative', "overflow-hidden", "w-[160px]", 'h-11', "btn-linear-bg", "rounded-full", "text-sm", "text-white", 'font-semibold');
+        var_20.innerText = "Auto retry";
+        var_20.onclick = function() {
+            if (var_20.dataset.started !== 'yes') {
+                var_20.dataset.started = "yes";
+                var_20.innerText = "Stop";
+                PurchasePageRetryHelper.autoClick();
+            } else {
+                debugLog(var_20.dataset.stopAuto);
+                if (var_20.dataset.stopAuto === "yes") {
+                    debugLog("Set to false");
+                    var_20.dataset.stopAuto = 'no';
+                } else {
+                    debugLog("Set to true");
+                    var_20.dataset.stopAuto = "yes";
+                }
+                if (var_20.dataset.stopAuto === 'yes') {
+                    var_20.innerText = "Auto retry";
+                } else {
+                    var_20.innerText = "Stop";
+                }
+            }
+        };
+        if (this.purchaseButton) {
+            this.retryButton = this.purchaseButton.parentNode.appendChild(var_20);
+            debugLog("Created retry btn.");
+        }
+    },
+    'autoClick': function() {
+        let var_21 = this.retryButton;
+        let var_22 = this.purchaseButton;
+        if (!var_21 || !var_22) {
+            return;
+        }
+        let var_23 = document.querySelector('.ant-modal-mask');
+        let var_24 = !!var_23 && !!var_23.style && var_23.style.display !== "none";
+        if (var_21.dataset.stopAuto !== "yes" && !var_24) {
+            debugLog("Click purchase button.");
+            var_22.click();
+        } else {
+            PresaleMemberCodeHelper.run();
+        }
+        setTimeout(() => {
+            PurchasePageRetryHelper.autoClick();
+        }, 0x4b);
+    }
+};
+let onPurchasePage = function() {
+    if (!document.getElementById('hkticketkiller-auto-retry')) {
+        PurchasePageRetryHelper.createRetryButton();
+    }
+    PurchasePageAddCartHelper.run();
+};
+let main = async function() {
+    if (!enabled) {
+        debugLog("disabled.");
+        clearInterval(mainInterval);
+        return;
+    }
+    PurchasePageRetryHelper.purchaseButton = document.querySelector(".text-right button.cursor-pointer.relative.overflow-hidden");
+    onPurchasePage();
+};
+document.addEventListener("readystatechange", var_25 => {
+    if (var_25.target.readyState === "complete") {
+        try {} catch (var_26) {
+            debugLog(JSON.stringify(var_26));
+        }
+    }
+});
+window.addEventListener('message', function(var_27) {}, false);
+chrome.runtime.onMessage.addListener(async function(var_28, var_29, var_30) {
+    if (var_28.action === 'checkDeadlineCallback') {
+        if (var_28.disable) {
+            enabled = false;
+            debugLog("Bot outdated. Please update to the latest version.");
+        } else {
+            debugLog("Key valid.");
+        }
+        var_30(true);
+    } else if (var_28.action === "getOptionsCallback") {
+        var_30(true);
+        if (var_28.options && var_28.options.fantopia) {
+            fantopiaOptions = var_28.options.fantopia;
+        }
+    }
+    return true;
+});
+init();

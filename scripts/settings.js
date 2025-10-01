@@ -1,1 +1,55 @@
-const _0x5e04c1=_0x56a7;(function(_0x5bc94c,_0x28ad5a){const _0x1d2ada=_0x56a7,_0x4a0be0=_0x5bc94c();while(!![]){try{const _0x50a17d=parseInt(_0x1d2ada(0xb8))/0x1+-parseInt(_0x1d2ada(0xc4))/0x2+-parseInt(_0x1d2ada(0xb9))/0x3+-parseInt(_0x1d2ada(0xbe))/0x4+-parseInt(_0x1d2ada(0xcd))/0x5*(parseInt(_0x1d2ada(0xbb))/0x6)+-parseInt(_0x1d2ada(0xc6))/0x7*(parseInt(_0x1d2ada(0xb2))/0x8)+-parseInt(_0x1d2ada(0xbd))/0x9*(-parseInt(_0x1d2ada(0xc3))/0xa);if(_0x50a17d===_0x28ad5a)break;else _0x4a0be0['push'](_0x4a0be0['shift']());}catch(_0x564cbf){_0x4a0be0['push'](_0x4a0be0['shift']());}}}(_0x27a4,0x26b6e));let iframe,debugLog=function(_0x5718f8){const _0x482cd5=_0x56a7;console[_0x482cd5(0xcf)]('HKTicketKiller:',_0x5718f8);},sendMessageToBubblePage=function(_0xacbb59){const _0xcc643b=_0x56a7;if(iframe){let _0x10b46c=_0xcc643b(0xbc)+iframe[_0xcc643b(0xcc)]['location'][_0xcc643b(0xcb)];iframe['contentWindow']['postMessage'](_0xacbb59,_0x10b46c);}else window[_0xcc643b(0xc5)](_0xacbb59,window[_0xcc643b(0xc1)]['origin']);},main=async function(){return!![];};function _0x56a7(_0x16cffa,_0x4f69b1){const _0x27a4d2=_0x27a4();return _0x56a7=function(_0x56a710,_0x4c356d){_0x56a710=_0x56a710-0xaf;let _0x26b090=_0x27a4d2[_0x56a710];return _0x26b090;},_0x56a7(_0x16cffa,_0x4f69b1);}function _0x27a4(){const _0x8d29e=['content\x20script\x20triggered\x20updateOptions','getDeadlineFromKey','runtime','content\x20script\x20getVersionCallback','119115MZDBoC','716139SXHEIv','getDeadline','603486RvEYKt','https://','9QXKHDG','1096308DkhXIh','addListener','onMessage','location','getOptions','8373510JYrxfL','82994ZcNLUu','postMessage','7msjfiS','sendMessage','addEventListener','updateOptions','version','hostname','contentWindow','10slJVst','data','log','getVersion','getManifest','setDeadline','customnocode_main_iframe','action','339544CHfGSj','window\x20received\x20message'];_0x27a4=function(){return _0x8d29e;};return _0x27a4();}window['onload']=function(){const _0x29a02b=_0x56a7;iframe=document['getElementById'](_0x29a02b(0xb0));},window[_0x5e04c1(0xc8)]('message',function(_0xc0548c){const _0x5112db=_0x5e04c1;debugLog(_0x5112db(0xb3));let _0x452e01=_0xc0548c[_0x5112db(0xce)];if(_0x452e01[_0x5112db(0xb1)]===_0x5112db(0xc9))debugLog(_0x5112db(0xb4)),debugLog(_0x452e01),chrome[_0x5112db(0xb6)][_0x5112db(0xc7)](_0x452e01);else{if(_0x452e01[_0x5112db(0xb1)]===_0x5112db(0xb5))chrome['runtime'][_0x5112db(0xc7)](_0x452e01);else{if(_0x452e01[_0x5112db(0xb1)]===_0x5112db(0xba))chrome[_0x5112db(0xb6)][_0x5112db(0xc7)](_0x452e01);else{if(_0x452e01[_0x5112db(0xb1)]===_0x5112db(0xaf))chrome[_0x5112db(0xb6)][_0x5112db(0xc7)](_0x452e01);else{if(_0x452e01[_0x5112db(0xb1)]===_0x5112db(0xc2))chrome[_0x5112db(0xb6)]['sendMessage'](_0x452e01);else{if(_0x452e01[_0x5112db(0xb1)]===_0x5112db(0xd0)){let _0x76b0d5=chrome[_0x5112db(0xb6)][_0x5112db(0xd1)]();debugLog(_0x5112db(0xb7)),debugLog(_0x76b0d5['version']);let _0x3e6937={'action':'getVersionCallback','version':_0x76b0d5[_0x5112db(0xca)]};sendMessageToBubblePage(_0x3e6937);}}}}}}},![]),chrome[_0x5e04c1(0xb6)][_0x5e04c1(0xc0)][_0x5e04c1(0xbf)](async function(_0x58b5c3,_0x310ea7,_0x455a85){return sendMessageToBubblePage(_0x58b5c3),!![];});
+let iframe;
+let debugLog = function(logMessage) {
+    console.log('HKTicketKiller:', logMessage);
+};
+let sendMessageToBubblePage = function(payload) {
+    if (iframe) {
+        let bubbleOrigin = "https://" + iframe.contentWindow.location.hostname;
+        iframe.contentWindow.postMessage(payload, bubbleOrigin);
+    } else {
+        window.postMessage(payload, window.location.origin);
+    }
+};
+window.onload = function() {
+    iframe = document.getElementById("customnocode_main_iframe");
+};
+window.addEventListener('message', function(event) {
+    debugLog("window received message");
+    let eventData = event.data;
+    if (eventData.action === "updateOptions") {
+        debugLog("content script triggered updateOptions");
+        debugLog(eventData);
+        chrome.runtime.sendMessage(eventData);
+    } else {
+        if (eventData.action === "getDeadlineFromKey") {
+            chrome.runtime.sendMessage(eventData);
+        } else {
+            if (eventData.action === "getDeadline") {
+                chrome.runtime.sendMessage(eventData);
+            } else {
+                if (eventData.action === "setDeadline") {
+                    chrome.runtime.sendMessage(eventData);
+                } else {
+                    if (eventData.action === "getOptions") {
+                        chrome.runtime.sendMessage(eventData);
+                    } else {
+                        if (eventData.action === "getVersion") {
+                            let manifest = chrome.runtime.getManifest();
+                            debugLog("content script getVersionCallback");
+                            debugLog(manifest.version);
+                            let versionMessage = {
+                                'action': 'getVersionCallback',
+                                'version': manifest.version
+                            };
+                            sendMessageToBubblePage(versionMessage);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}, false);
+chrome.runtime.onMessage.addListener(async function(request, sender, sendResponse) {
+    sendMessageToBubblePage(request);
+    return true;
+});

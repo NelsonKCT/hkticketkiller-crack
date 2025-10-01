@@ -1,1 +1,305 @@
-function _0x2eeb(_0x268e18,_0x532baf){const _0x177573=_0x1775();return _0x2eeb=function(_0x2eebbb,_0x26cdd6){_0x2eebbb=_0x2eebbb-0x1dc;let _0x14a62d=_0x177573[_0x2eebbb];return _0x14a62d;},_0x2eeb(_0x268e18,_0x532baf);}const _0x1c1578=_0x2eeb;(function(_0x5e369d,_0x2419d6){const _0x1467db=_0x2eeb,_0x51954f=_0x5e369d();while(!![]){try{const _0x33a6a2=-parseInt(_0x1467db(0x209))/0x1*(parseInt(_0x1467db(0x200))/0x2)+parseInt(_0x1467db(0x201))/0x3+-parseInt(_0x1467db(0x1e2))/0x4*(parseInt(_0x1467db(0x225))/0x5)+parseInt(_0x1467db(0x1fc))/0x6+parseInt(_0x1467db(0x22d))/0x7*(parseInt(_0x1467db(0x21d))/0x8)+-parseInt(_0x1467db(0x224))/0x9*(-parseInt(_0x1467db(0x1e4))/0xa)+parseInt(_0x1467db(0x23e))/0xb;if(_0x33a6a2===_0x2419d6)break;else _0x51954f['push'](_0x51954f['shift']());}catch(_0x41e549){_0x51954f['push'](_0x51954f['shift']());}}}(_0x1775,0xbef85));function _0x1775(){const _0x4a0df5=['Start\x20Loading\x20bot','12392160vYYiIO','/registrations/','/users/sign_in','random','height','recorderReady','membershipNumber','appendChild','getElementById','length','ignore','stringify','person_agree_terms','forEach','classList','some','location','209740AFVPrs','由左至右','10sSZgyK','splice','querySelectorAll','chagne','.display-table-row','getOptionsCallback','add','停止自動加車','Window\x20received\x20message','options','disable','runtime','forceReload','.tickets\x20.btn-point','readystatechange','pop','getOptions','saveWindowId','Window\x20received\x20message\x20from\x20background','push','href','.register-new-next-button-area\x20button','data','screen','788208pAQfiR','substring','log','shift','2708742XqwIKX','1231149giRHXY','checked','setWindowSize','innerText','onload','由下而上','Bot\x20outdated.\x20Please\x20update\x20to\x20the\x20latest\x20version.','toISOString','1sEmxuG','addCart','value','.ticket-name','addListener','addCart\x20disabled','includes','querySelector','sendMessage','selected\x20date','getTime','Key\x20valid.','HKTicketKiller:','target','selectDate\x20disabled','selectDate','floor','/registrations/new','onMessage','No\x20available\x20ticket.','272296XXApJc','enable','reloadDelay','rule','checkDeadlineCallback','createElement','speed','12311505UKEDCs','115UpKJtH','stopForceReload','btn','readyState','complete','trim','click','addEventListener','63lHXffV','由上而下','split','onclick','由右至左','checkDeadline','button','replaceAll','hkticketkiller_auto_add_cart_btn','啟動自動加車','kktix','.ticket-quantity\x20.plus','action','closest','dispatchEvent','reload'];_0x1775=function(){return _0x4a0df5;};return _0x1775();}let key=_0x1c1578(0x237),mainInterval,kktixOptions={'addCart':{'enable':![],'qty':'','ignore':'','rule':_0x1c1578(0x22e),'speed':0x1,'membershipNumber':'123'},'selectDate':{}},options,debugLog=function(_0x3336bf){const _0x4d2a8e=_0x1c1578;console['log'](_0x4d2a8e(0x215),_0x3336bf);},actionStartTime,speed=0xc8,selectedDate=![],clickedNextStepOnEvent=![],addedCart=![],stayAddCartPage=![],scheduledReload=![],tools={'secondToTime':function(_0x24b021){const _0x561186=_0x1c1578;return new Date(_0x24b021*0x3e8)[_0x561186(0x208)]()[_0x561186(0x1fd)](0xe,0x13);},'createDivWithClass':function(_0xdaf168){const _0x1b31c6=_0x1c1578;let _0x2c9674=document[_0x1b31c6(0x222)]('div');for(let _0x350346=0x0;_0x350346<_0xdaf168[_0x1b31c6(0x247)];_0x350346++){_0x2c9674['classList'][_0x1b31c6(0x1ea)](_0xdaf168[_0x350346]);}return _0x2c9674;},'getRandNum':function(_0x85711f,_0x51acbc){const _0x354795=_0x1c1578;return Math[_0x354795(0x219)](Math[_0x354795(0x241)]()*(_0x51acbc-_0x85711f+0x1))+_0x85711f;}},checkAgree=function(){const _0x23092d=_0x1c1578;let _0x1188c8=document[_0x23092d(0x246)](_0x23092d(0x1dd));_0x1188c8&&!_0x1188c8[_0x23092d(0x202)]&&_0x1188c8['click']();},autoAddCart=function(){const _0x350bfc=_0x1c1578;let _0x400471=document['querySelectorAll'](_0x350bfc(0x238)),_0x29bff4=[];_0x400471[_0x350bfc(0x1de)](_0x17da98=>{const _0x9e4eab=_0x350bfc;_0x29bff4[_0x9e4eab(0x1f7)](_0x17da98);});let _0x96271a;while(_0x29bff4&&_0x29bff4[_0x350bfc(0x247)]>0x0){console[_0x350bfc(0x1fe)](_0x400471);if(kktixOptions[_0x350bfc(0x20a)][_0x350bfc(0x220)]===_0x350bfc(0x22e))_0x96271a=_0x29bff4[_0x350bfc(0x1ff)]();else kktixOptions[_0x350bfc(0x20a)]['rule']===_0x350bfc(0x206)?_0x96271a=_0x29bff4['pop']():_0x96271a=_0x29bff4[_0x350bfc(0x1e5)](Math[_0x350bfc(0x219)](Math[_0x350bfc(0x241)]()*_0x29bff4[_0x350bfc(0x247)]),0x1)[0x0];let _0xcf29ec=_0x96271a[_0x350bfc(0x23a)](_0x350bfc(0x1e8)),_0x290914;if(_0xcf29ec)_0x290914=_0xcf29ec[_0x350bfc(0x210)](_0x350bfc(0x20c));let _0x448dd0=kktixOptions['addCart'][_0x350bfc(0x248)];if(_0x448dd0){_0x448dd0=_0x448dd0[_0x350bfc(0x234)]('，',',');let _0x303911=_0x448dd0[_0x350bfc(0x22f)](',');if(_0x303911[_0x350bfc(0x1e0)](_0x581260=>_0x290914['innerText'][_0x350bfc(0x20f)](_0x581260[_0x350bfc(0x22a)]())))_0x96271a=null;else break;}else break;}let _0x145ea2=parseInt(kktixOptions[_0x350bfc(0x20a)]['qty']||0x0);console[_0x350bfc(0x1fe)](_0x96271a);if(!_0x96271a)return![];for(let _0x405f29=0x0;_0x405f29<_0x145ea2;_0x405f29++){_0x96271a[_0x350bfc(0x22b)]();}let _0x1d4911=kktixOptions[_0x350bfc(0x20a)][_0x350bfc(0x244)];if(_0x1d4911){let _0x38ac9d=document[_0x350bfc(0x1e6)]('.control-group\x20input[type=\x22text\x22]');_0x38ac9d[_0x350bfc(0x1de)](_0x49efa8=>{const _0x454379=_0x350bfc;_0x49efa8['focus'](),_0x49efa8[_0x454379(0x20b)]=_0x1d4911,_0x49efa8[_0x454379(0x23b)](new Event(_0x454379(0x1e7))),_0x49efa8['blur']();});}checkAgree();let _0x3708a6=function(){const _0x1e4849=_0x350bfc;let _0x32d026=document[_0x1e4849(0x246)](_0x1e4849(0x235));if(_0x32d026&&_0x32d026['innerText']===_0x1e4849(0x236))return;let _0x19c9b6=document[_0x1e4849(0x210)](_0x1e4849(0x1f9));if(_0x19c9b6&&kktixOptions[_0x1e4849(0x20a)]&&kktixOptions[_0x1e4849(0x20a)][_0x1e4849(0x21e)]){if(_0x19c9b6['disabled'])stayAddCartPage=!![];_0x19c9b6[_0x1e4849(0x22b)]();}};return _0x3708a6(),setInterval(_0x3708a6,0x12c),!![];},selectDate=function(){const _0x3ad268=_0x1c1578;let _0x5ae03f=document['querySelectorAll']('.event-list\x20li'),_0x172170=[],_0x55678f;_0x5ae03f[_0x3ad268(0x1de)](_0x43225a=>{_0x172170['push'](_0x43225a);});let _0x547409=kktixOptions[_0x3ad268(0x218)][_0x3ad268(0x248)]||'',_0x4a40c6=[];if(_0x547409){let _0x4341d4=_0x547409[_0x3ad268(0x234)]('，',',');_0x4a40c6=_0x4341d4[_0x3ad268(0x22f)](',');}while(_0x172170&&_0x172170[_0x3ad268(0x247)]>0x0){if(kktixOptions[_0x3ad268(0x218)]['rule']===_0x3ad268(0x1e3))_0x55678f=_0x172170[_0x3ad268(0x1ff)]();else kktixOptions[_0x3ad268(0x218)]['rule']===_0x3ad268(0x231)?_0x55678f=_0x172170[_0x3ad268(0x1f3)]():_0x55678f=_0x172170[_0x3ad268(0x1e5)](Math[_0x3ad268(0x219)](Math[_0x3ad268(0x241)]()*_0x172170[_0x3ad268(0x247)]),0x1)[0x0];if(_0x4a40c6[_0x3ad268(0x1e0)](_0x5bdf0d=>_0x55678f[_0x3ad268(0x204)][_0x3ad268(0x20f)](_0x5bdf0d['trim']())))_0x55678f=null;else break;}if(_0x55678f){let _0x27f248=_0x55678f['querySelector']('a');if(_0x27f248)_0x27f248[_0x3ad268(0x22b)]();}return _0x55678f;},onSelectDate=function(){const _0x2ebfab=_0x1c1578;let _0x3b55c6=new Date()[_0x2ebfab(0x213)](),_0x35030c=_0x3b55c6-actionStartTime,_0x3cf09f=(kktixOptions[_0x2ebfab(0x223)]||0x1)*0x3e8;if(kktixOptions[_0x2ebfab(0x218)]&&kktixOptions[_0x2ebfab(0x218)][_0x2ebfab(0x21e)]){if(!selectedDate)selectedDate=selectDate();else debugLog(_0x2ebfab(0x212));!selectedDate&&(debugLog('No\x20available\x20date.'),_0x35030c>_0x3cf09f&&window[_0x2ebfab(0x1e1)]['reload']());}else debugLog(_0x2ebfab(0x217));},createStopAutoAddCartButton=function(){const _0x18f8e7=_0x1c1578;if(document[_0x18f8e7(0x246)]('hkticketkiller_auto_add_cart_btn'))return;let _0x479533=document[_0x18f8e7(0x222)](_0x18f8e7(0x233));_0x479533['id']='hkticketkiller_auto_add_cart_btn',_0x479533[_0x18f8e7(0x1df)][_0x18f8e7(0x1ea)](_0x18f8e7(0x227)),_0x479533['classList'][_0x18f8e7(0x1ea)]('btn-primary'),_0x479533[_0x18f8e7(0x204)]=_0x18f8e7(0x1eb),_0x479533[_0x18f8e7(0x230)]=function(){const _0x221ed3=_0x18f8e7;if(!kktixOptions['addCart'])kktixOptions[_0x221ed3(0x20a)]={};if(_0x479533[_0x221ed3(0x204)]===_0x221ed3(0x1eb))_0x479533[_0x221ed3(0x204)]='啟動自動加車';else{_0x479533[_0x221ed3(0x204)]='停止自動加車';if(!kktixOptions[_0x221ed3(0x20a)]['qty']){chrome['runtime'][_0x221ed3(0x211)]({'action':'goToSettings','page':_0x221ed3(0x237)});return;}}};let _0x3b952f=document['getElementsByClassName']('register-new-next-button-area')[0x0];if(_0x3b952f)_0x3b952f[_0x18f8e7(0x245)](_0x479533);},onAddCartPage=function(){const _0x2a9b8d=_0x1c1578;createStopAutoAddCartButton();let _0x405339=new Date()['getTime'](),_0xd30c86=_0x405339-actionStartTime,_0x4f9b44=(kktixOptions[_0x2a9b8d(0x223)]||0x1)*0x3e8;chrome[_0x2a9b8d(0x1ef)][_0x2a9b8d(0x211)]({'action':_0x2a9b8d(0x1f5)},_0x1dfb68=>{});if(kktixOptions['addCart']&&kktixOptions[_0x2a9b8d(0x20a)][_0x2a9b8d(0x21e)]){if(!addedCart)addedCart=autoAddCart();!addedCart&&(debugLog(_0x2a9b8d(0x21c)),_0xd30c86>_0x4f9b44&&(window['location'][_0x2a9b8d(0x23c)](),clearInterval(mainInterval)));let _0x56f9be=kktixOptions[_0x2a9b8d(0x20a)][_0x2a9b8d(0x21f)];_0x56f9be&&!scheduledReload&&(forceReload(_0x56f9be*0x3e8),scheduledReload=!![]);}else{debugLog(_0x2a9b8d(0x20e));let _0x172856=document['getElementById'](_0x2a9b8d(0x235));_0x172856&&(_0x172856[_0x2a9b8d(0x204)]=_0x2a9b8d(0x236));}},forceReload=function(_0x1844df){const _0x515223=_0x1c1578;chrome[_0x515223(0x1ef)][_0x515223(0x211)]({'action':_0x515223(0x1f0),'delay':_0x1844df});},stopForceReload=function(){const _0x1858d3=_0x1c1578;chrome[_0x1858d3(0x1ef)]['sendMessage']({'action':_0x1858d3(0x226)});},main=async function(){const _0x3ecade=_0x1c1578;return actionStartTime=new Date()['getTime'](),debugLog(_0x3ecade(0x23d)),mainInterval=setInterval(function(){const _0x9e7ca2=_0x3ecade;let _0x39acc5=window[_0x9e7ca2(0x1e1)][_0x9e7ca2(0x1f8)];if(_0x39acc5[_0x9e7ca2(0x20f)](_0x9e7ca2(0x240))){}else{if(_0x39acc5[_0x9e7ca2(0x20f)](_0x9e7ca2(0x21a)))setTimeout(onAddCartPage,0x3e8);else{if(_0x39acc5[_0x9e7ca2(0x20f)](_0x9e7ca2(0x23f))){stopForceReload();const _0x5952a1=Math['floor'](window[_0x9e7ca2(0x1fb)][_0x9e7ca2(0x242)]*0.9);chrome[_0x9e7ca2(0x1ef)]['sendMessage']({'action':_0x9e7ca2(0x203),'width':0x0,'height':_0x5952a1},_0x5a61b3=>{});}else{if(_0x39acc5[_0x9e7ca2(0x20f)]('/events/')){if(document[_0x9e7ca2(0x210)]('.event-list'))onSelectDate();else document[_0x9e7ca2(0x210)]('.tickets\x20.btn-point')&&(!clickedNextStepOnEvent&&(clickedNextStepOnEvent=!![],document[_0x9e7ca2(0x210)](_0x9e7ca2(0x1f1))['click']()));}}}}},speed),!![];};window[_0x1c1578(0x205)]=function(){const _0xa69a16=_0x1c1578;chrome[_0xa69a16(0x1ef)][_0xa69a16(0x211)]({'action':_0xa69a16(0x1f4)});},document['addEventListener'](_0x1c1578(0x1f2),_0x53670b=>{const _0x4f9600=_0x1c1578;if(_0x53670b[_0x4f9600(0x216)][_0x4f9600(0x228)]===_0x4f9600(0x229))try{chrome[_0x4f9600(0x1ef)][_0x4f9600(0x211)]({'action':_0x4f9600(0x232)});}catch(_0x28683b){debugLog(JSON[_0x4f9600(0x1dc)](_0x28683b));}}),window[_0x1c1578(0x22c)]('message',function(_0x164457){const _0x4c00dd=_0x1c1578;debugLog(_0x4c00dd(0x1ec));let _0x215e5b=_0x164457[_0x4c00dd(0x1fa)];_0x215e5b['action']===_0x4c00dd(0x243)&&recorderReady();},![]),chrome[_0x1c1578(0x1ef)][_0x1c1578(0x21b)][_0x1c1578(0x20d)](async function(_0x28f2ab,_0x20a762,_0x5562be){const _0x4a6bb6=_0x1c1578;debugLog(_0x4a6bb6(0x1f6)),console['log'](_0x20a762),console[_0x4a6bb6(0x1fe)](_0x28f2ab);if(_0x28f2ab[_0x4a6bb6(0x239)]===_0x4a6bb6(0x221))_0x28f2ab[_0x4a6bb6(0x1ee)]?debugLog(_0x4a6bb6(0x207)):(debugLog(_0x4a6bb6(0x214)),main()),_0x5562be(!![]);else _0x28f2ab[_0x4a6bb6(0x239)]===_0x4a6bb6(0x1e9)&&(_0x5562be(!![]),_0x28f2ab[_0x4a6bb6(0x1ed)]&&(kktixOptions=_0x28f2ab[_0x4a6bb6(0x1ed)][_0x4a6bb6(0x237)]||{},options=_0x28f2ab['options']));return!![];});
+let mainInterval;
+let kktixOptions = {
+    'addCart': {
+        'enable': false,
+        'qty': '',
+        'ignore': '',
+        'rule': "由上而下",
+        'speed': 0x1,
+        'membershipNumber': '123'
+    },
+    'selectDate': {}
+};
+let options;
+let debugLog = function(var_0) {
+    console.log("HKTicketKiller:", var_0);
+};
+let actionStartTime;
+let selectedDate = false;
+let clickedNextStepOnEvent = false;
+let addedCart = false;
+let stayAddCartPage = false;
+let scheduledReload = false;
+let checkAgree = function() {
+    let var_1 = document.getElementById("person_agree_terms");
+    if (var_1 && !var_1.checked) {
+        var_1.click();
+    }
+};
+let autoAddCart = function() {
+    let var_2 = document.querySelectorAll(".ticket-quantity .plus");
+    let var_3 = [];
+    var_2.forEach(var_4 => {
+        var_3.push(var_4);
+    });
+    let var_5;
+    while (var_3 && var_3.length > 0x0) {
+        console.log(var_2);
+        if (kktixOptions.addCart.rule === "由上而下") {
+            var_5 = var_3.shift();
+        } else if (kktixOptions.addCart.rule === "由下而上") {
+            var_5 = var_3.pop();
+        } else {
+            var_5 = var_3.splice(Math.floor(Math.random() * var_3.length), 0x1)[0x0];
+        }
+        let var_6 = var_5.closest(".display-table-row");
+        let var_7;
+        if (var_6) {
+            var_7 = var_6.querySelector(".ticket-name");
+        }
+        let var_8 = kktixOptions.addCart.ignore;
+        if (var_8) {
+            var_8 = var_8.replaceAll('，', ',');
+            let var_9 = var_8.split(',');
+            if (var_9.some(var_10 => var_7.innerText.includes(var_10.trim()))) {
+                var_5 = null;
+            } else {
+                break;
+            }
+        } else {
+            break;
+        }
+    }
+    let var_11 = parseInt(kktixOptions.addCart.qty || 0x0);
+    console.log(var_5);
+    if (!var_5) {
+        return false;
+    }
+    for (let var_12 = 0x0; var_12 < var_11; var_12++) {
+        var_5.click();
+    }
+    let var_13 = kktixOptions.addCart.membershipNumber;
+    if (var_13) {
+        let var_14 = document.querySelectorAll(".control-group input[type=\"text\"]");
+        var_14.forEach(var_15 => {
+            var_15.focus();
+            var_15.value = var_13;
+            var_15.dispatchEvent(new Event("chagne"));
+            var_15.blur();
+        });
+    }
+    checkAgree();
+    let var_16 = function() {
+        let var_17 = document.getElementById("hkticketkiller_auto_add_cart_btn");
+        if (var_17 && var_17.innerText === "啟動自動加車") {
+            return;
+        }
+        let var_18 = document.querySelector(".register-new-next-button-area button");
+        if (var_18 && kktixOptions.addCart && kktixOptions.addCart.enable) {
+            if (var_18.disabled) {
+                stayAddCartPage = true;
+            }
+            var_18.click();
+        }
+    };
+    var_16();
+    setInterval(var_16, 0x12c);
+    return true;
+};
+let selectDate = function() {
+    let var_19 = document.querySelectorAll(".event-list li");
+    let var_20 = [];
+    let var_21;
+    var_19.forEach(var_22 => {
+        var_20.push(var_22);
+    });
+    let var_23 = kktixOptions.selectDate.ignore || '';
+    let var_24 = [];
+    if (var_23) {
+        let var_25 = var_23.replaceAll('，', ',');
+        var_24 = var_25.split(',');
+    }
+    while (var_20 && var_20.length > 0x0) {
+        if (kktixOptions.selectDate.rule === "由左至右") {
+            var_21 = var_20.shift();
+        } else if (kktixOptions.selectDate.rule === "由右至左") {
+            var_21 = var_20.pop();
+        } else {
+            var_21 = var_20.splice(Math.floor(Math.random() * var_20.length), 0x1)[0x0];
+        }
+        if (var_24.some(var_26 => var_21.innerText.includes(var_26.trim()))) {
+            var_21 = null;
+        } else {
+            break;
+        }
+    }
+    if (var_21) {
+        let var_27 = var_21.querySelector('a');
+        if (var_27) {
+            var_27.click();
+        }
+    }
+    return var_21;
+};
+let onSelectDate = function() {
+    let var_28 = new Date().getTime();
+    let var_29 = var_28 - actionStartTime;
+    let var_30 = (kktixOptions.speed || 0x1) * 0x3e8;
+    if (kktixOptions.selectDate && kktixOptions.selectDate.enable) {
+        if (!selectedDate) {
+            selectedDate = selectDate();
+        } else {
+            debugLog("selected date");
+        }
+        if (!selectedDate) {
+            debugLog("No available date.");
+            if (var_29 > var_30) {
+                window.location.reload();
+            }
+        }
+    } else {
+        debugLog("selectDate disabled");
+    }
+};
+let createStopAutoAddCartButton = function() {
+    if (document.getElementById('hkticketkiller_auto_add_cart_btn')) {
+        return;
+    }
+    let var_31 = document.createElement("button");
+    var_31.id = 'hkticketkiller_auto_add_cart_btn';
+    var_31.classList.add("btn");
+    var_31.classList.add('btn-primary');
+    var_31.innerText = "停止自動加車";
+    var_31.onclick = function() {
+        if (!kktixOptions.addCart) {
+            kktixOptions.addCart = {};
+        }
+        if (var_31.innerText === "停止自動加車") {
+            var_31.innerText = '啟動自動加車';
+        } else {
+            var_31.innerText = '停止自動加車';
+            if (!kktixOptions.addCart.qty) {
+                chrome.runtime.sendMessage({
+                    'action': 'goToSettings',
+                    'page': "kktix"
+                });
+                return;
+            }
+        }
+    };
+    let var_32 = document.getElementsByClassName('register-new-next-button-area')[0x0];
+    if (var_32) {
+        var_32.appendChild(var_31);
+    }
+};
+let onAddCartPage = function() {
+    createStopAutoAddCartButton();
+    let var_33 = new Date().getTime();
+    let var_34 = var_33 - actionStartTime;
+    let var_35 = (kktixOptions.speed || 0x1) * 0x3e8;
+    chrome.runtime.sendMessage({
+        'action': "saveWindowId"
+    }, var_36 => {});
+    if (kktixOptions.addCart && kktixOptions.addCart.enable) {
+        if (!addedCart) {
+            addedCart = autoAddCart();
+        }
+        if (!addedCart) {
+            debugLog("No available ticket.");
+            if (var_34 > var_35) {
+                window.location.reload();
+                clearInterval(mainInterval);
+            }
+        }
+        let var_37 = kktixOptions.addCart.reloadDelay;
+        if (var_37 && !scheduledReload) {
+            forceReload(var_37 * 0x3e8);
+            scheduledReload = true;
+        }
+    } else {
+        debugLog("addCart disabled");
+        let var_38 = document.getElementById("hkticketkiller_auto_add_cart_btn");
+        if (var_38) {
+            var_38.innerText = "啟動自動加車";
+        }
+    }
+};
+let forceReload = function(var_39) {
+    chrome.runtime.sendMessage({
+        'action': "forceReload",
+        'delay': var_39
+    });
+};
+let stopForceReload = function() {
+    chrome.runtime.sendMessage({
+        'action': "stopForceReload"
+    });
+};
+let main = async function() {
+    actionStartTime = new Date().getTime();
+    debugLog("Start Loading bot");
+    mainInterval = setInterval(function() {
+        let var_40 = window.location.href;
+        if (var_40.includes("/users/sign_in")) {} else {
+            if (var_40.includes("/registrations/new")) {
+                setTimeout(onAddCartPage, 0x3e8);
+            } else {
+                if (var_40.includes("/registrations/")) {
+                    stopForceReload();
+                    const var_41 = Math.floor(window.screen.height * 0.9);
+                    chrome.runtime.sendMessage({
+                        'action': "setWindowSize",
+                        'width': 0x0,
+                        'height': var_41
+                    }, var_42 => {});
+                } else {
+                    if (var_40.includes('/events/')) {
+                        if (document.querySelector('.event-list')) {
+                            onSelectDate();
+                        } else if (document.querySelector(".tickets .btn-point")) {
+                            if (!clickedNextStepOnEvent) {
+                                clickedNextStepOnEvent = true;
+                                document.querySelector(".tickets .btn-point").click();
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }, 0xc8);
+    return true;
+};
+window.onload = function() {
+    chrome.runtime.sendMessage({
+        'action': "getOptions"
+    });
+};
+document.addEventListener("readystatechange", var_43 => {
+    if (var_43.target.readyState === "complete") {
+        try {
+            chrome.runtime.sendMessage({
+                'action': "checkDeadline"
+            });
+        } catch (var_44) {
+            debugLog(JSON.stringify(var_44));
+        }
+    }
+});
+window.addEventListener('message', function(var_45) {
+    debugLog("Window received message");
+    let var_46 = var_45.data;
+    if (var_46.action === "recorderReady") {
+        recorderReady();
+    }
+}, false);
+chrome.runtime.onMessage.addListener(async function(var_47, var_48, var_49) {
+    debugLog("Window received message from background");
+    console.log(var_48);
+    console.log(var_47);
+    if (var_47.action === "checkDeadlineCallback") {
+        if (var_47.disable) {
+            debugLog("Bot outdated. Please update to the latest version.");
+        } else {
+            debugLog("Key valid.");
+            main();
+        }
+        var_49(true);
+    } else if (var_47.action === "getOptionsCallback") {
+        var_49(true);
+        if (var_47.options) {
+            kktixOptions = var_47.options.kktix || {};
+            options = var_47.options;
+        }
+    }
+    return true;
+});
